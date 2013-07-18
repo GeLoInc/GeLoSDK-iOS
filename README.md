@@ -1,5 +1,3 @@
-#GeLo SDK
-
 #Using the GeLoSDK
 
 ##Notifications
