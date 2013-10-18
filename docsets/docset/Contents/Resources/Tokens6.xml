@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GeLoTour.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GeLoTour</TokenIdentifier>
+			<Abstract type="html">GeLoTour is a data model that represents tour information from the CMS</Abstract>
+			<DeclaredIn>GeLoTour.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoTour/setTourId:</TokenIdentifier>
+			<Abstract type="html">identifier of the tour</Abstract>
+			<DeclaredIn>GeLoTour.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSNumber *tourId</Declaration>
+			
+			
+			<Anchor>//api/name/tourId</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoTour/tourId</TokenIdentifier>
+			<Abstract type="html">identifier of the tour</Abstract>
+			<DeclaredIn>GeLoTour.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSNumber *tourId</Declaration>
+			
+			
+			<Anchor>//api/name/tourId</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GeLoTour/tourId</TokenIdentifier>
+			<Abstract type="html">identifier of the tour</Abstract>
+			<DeclaredIn>GeLoTour.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSNumber *tourId</Declaration>
+			
+			
+			<Anchor>//api/name/tourId</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoTour/setName:</TokenIdentifier>
+			<Abstract type="html">name of the tour</Abstract>
+			<DeclaredIn>GeLoTour.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoTour/name</TokenIdentifier>
+			<Abstract type="html">name of the tour</Abstract>
+			<DeclaredIn>GeLoTour.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GeLoTour/name</TokenIdentifier>
+			<Abstract type="html">name of the tour</Abstract>
+			<DeclaredIn>GeLoTour.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoTour/setMap:</TokenIdentifier>
+			<Abstract type="html">URL for a map of the tour.</Abstract>
+			<DeclaredIn>GeLoTour.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *map</Declaration>
+			
+			
+			<Anchor>//api/name/map</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoTour/map</TokenIdentifier>
+			<Abstract type="html">URL for a map of the tour.</Abstract>
+			<DeclaredIn>GeLoTour.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *map</Declaration>
+			
+			
+			<Anchor>//api/name/map</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GeLoTour/map</TokenIdentifier>
+			<Abstract type="html">URL for a map of the tour.</Abstract>
+			<DeclaredIn>GeLoTour.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *map</Declaration>
+			
+			
+			<Anchor>//api/name/map</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoTour/setUpdatedAt:</TokenIdentifier>
+			<Abstract type="html">Data the tour was last updated</Abstract>
+			<DeclaredIn>GeLoTour.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSDate *updatedAt</Declaration>
+			
+			
+			<Anchor>//api/name/updatedAt</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoTour/updatedAt</TokenIdentifier>
+			<Abstract type="html">Data the tour was last updated</Abstract>
+			<DeclaredIn>GeLoTour.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSDate *updatedAt</Declaration>
+			
+			
+			<Anchor>//api/name/updatedAt</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GeLoTour/updatedAt</TokenIdentifier>
+			<Abstract type="html">Data the tour was last updated</Abstract>
+			<DeclaredIn>GeLoTour.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSDate *updatedAt</Declaration>
+			
+			
+			<Anchor>//api/name/updatedAt</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoTour/setBeaconInfo:</TokenIdentifier>
+			<Abstract type="html">Dictionary of GeLoBeaconInfos associated with the tour</Abstract>
+			<DeclaredIn>GeLoTour.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDictionary *beaconInfo</Declaration>
+			
+			
+			<Anchor>//api/name/beaconInfo</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoTour/beaconInfo</TokenIdentifier>
+			<Abstract type="html">Dictionary of GeLoBeaconInfos associated with the tour</Abstract>
+			<DeclaredIn>GeLoTour.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDictionary *beaconInfo</Declaration>
+			
+			
+			<Anchor>//api/name/beaconInfo</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GeLoTour/beaconInfo</TokenIdentifier>
+			<Abstract type="html">Dictionary of GeLoBeaconInfos associated with the tour</Abstract>
+			<DeclaredIn>GeLoTour.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDictionary *beaconInfo</Declaration>
+			
+			
+			<Anchor>//api/name/beaconInfo</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoTour/setSiteId:</TokenIdentifier>
+			<Abstract type="html">identifier of the site which the tour belongs to</Abstract>
+			<DeclaredIn>GeLoTour.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSNumber *siteId</Declaration>
+			
+			
+			<Anchor>//api/name/siteId</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoTour/siteId</TokenIdentifier>
+			<Abstract type="html">identifier of the site which the tour belongs to</Abstract>
+			<DeclaredIn>GeLoTour.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSNumber *siteId</Declaration>
+			
+			
+			<Anchor>//api/name/siteId</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GeLoTour/siteId</TokenIdentifier>
+			<Abstract type="html">identifier of the site which the tour belongs to</Abstract>
+			<DeclaredIn>GeLoTour.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSNumber *siteId</Declaration>
+			
+			
+			<Anchor>//api/name/siteId</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoTour/mediaCount</TokenIdentifier>
+			<Abstract type="html">Number of content items (images and auidos) associated with the tour</Abstract>
+			<DeclaredIn>GeLoTour.h</DeclaredIn>
+			
+			<Declaration>- (NSInteger)mediaCount</Declaration>
+			
+			
+			<Anchor>//api/name/mediaCount</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

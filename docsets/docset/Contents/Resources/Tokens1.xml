@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GeLoBeacon.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GeLoBeacon</TokenIdentifier>
+			<Abstract type="html">GeLoBeacon is a data model containting information associated with a physical GeLo beacon</Abstract>
+			<DeclaredIn>GeLoBeacon.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeacon/setBeaconId:</TokenIdentifier>
+			<Abstract type="html">The identifier of the GeLoBeacon</Abstract>
+			<DeclaredIn>GeLoBeacon.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, assign) NSUInteger beaconId</Declaration>
+			
+			
+			<Anchor>//api/name/beaconId</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeacon/beaconId</TokenIdentifier>
+			<Abstract type="html">The identifier of the GeLoBeacon</Abstract>
+			<DeclaredIn>GeLoBeacon.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, assign) NSUInteger beaconId</Declaration>
+			
+			
+			<Anchor>//api/name/beaconId</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GeLoBeacon/beaconId</TokenIdentifier>
+			<Abstract type="html">The identifier of the GeLoBeacon</Abstract>
+			<DeclaredIn>GeLoBeacon.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, assign) NSUInteger beaconId</Declaration>
+			
+			
+			<Anchor>//api/name/beaconId</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeacon/setSignalStrength:</TokenIdentifier>
+			<Abstract type="html">The signal strength of the  beacon</Abstract>
+			<DeclaredIn>GeLoBeacon.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, assign) NSInteger signalStrength</Declaration>
+			
+			
+			<Anchor>//api/name/signalStrength</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeacon/signalStrength</TokenIdentifier>
+			<Abstract type="html">The signal strength of the  beacon</Abstract>
+			<DeclaredIn>GeLoBeacon.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, assign) NSInteger signalStrength</Declaration>
+			
+			
+			<Anchor>//api/name/signalStrength</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GeLoBeacon/signalStrength</TokenIdentifier>
+			<Abstract type="html">The signal strength of the  beacon</Abstract>
+			<DeclaredIn>GeLoBeacon.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, assign) NSInteger signalStrength</Declaration>
+			
+			
+			<Anchor>//api/name/signalStrength</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeacon/setReceivedRSSI:</TokenIdentifier>
+			<Abstract type="html">The filtered received signal strength indication</Abstract>
+			<DeclaredIn>GeLoBeacon.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, assign) NSInteger receivedRSSI</Declaration>
+			
+			
+			<Anchor>//api/name/receivedRSSI</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeacon/receivedRSSI</TokenIdentifier>
+			<Abstract type="html">The filtered received signal strength indication</Abstract>
+			<DeclaredIn>GeLoBeacon.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, assign) NSInteger receivedRSSI</Declaration>
+			
+			
+			<Anchor>//api/name/receivedRSSI</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GeLoBeacon/receivedRSSI</TokenIdentifier>
+			<Abstract type="html">The filtered received signal strength indication</Abstract>
+			<DeclaredIn>GeLoBeacon.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, assign) NSInteger receivedRSSI</Declaration>
+			
+			
+			<Anchor>//api/name/receivedRSSI</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeacon/setTimeToLive:</TokenIdentifier>
+			<Abstract type="html">The length of time the beacon will be visible after being found</Abstract>
+			<DeclaredIn>GeLoBeacon.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, assign) NSUInteger timeToLive</Declaration>
+			
+			
+			<Anchor>//api/name/timeToLive</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeacon/timeToLive</TokenIdentifier>
+			<Abstract type="html">The length of time the beacon will be visible after being found</Abstract>
+			<DeclaredIn>GeLoBeacon.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, assign) NSUInteger timeToLive</Declaration>
+			
+			
+			<Anchor>//api/name/timeToLive</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GeLoBeacon/timeToLive</TokenIdentifier>
+			<Abstract type="html">The length of time the beacon will be visible after being found</Abstract>
+			<DeclaredIn>GeLoBeacon.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, assign) NSUInteger timeToLive</Declaration>
+			
+			
+			<Anchor>//api/name/timeToLive</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeacon/info</TokenIdentifier>
+			<Abstract type="html">Information from the GeLoCMS associated with the beacon</Abstract>
+			<DeclaredIn>GeLoBeacon.h</DeclaredIn>
+			
+			<Declaration>- (GeLoBeaconInfo *)info</Declaration>
+			
+			
+			<Anchor>//api/name/info</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

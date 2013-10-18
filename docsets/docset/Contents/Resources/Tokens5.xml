@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GeLoSite.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GeLoSite</TokenIdentifier>
+			<Abstract type="html">GeLoSite is a data model representing a site from the CMS</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/setSiteId:</TokenIdentifier>
+			<Abstract type="html">identifier for the site</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSNumber *siteId</Declaration>
+			
+			
+			<Anchor>//api/name/siteId</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/siteId</TokenIdentifier>
+			<Abstract type="html">identifier for the site</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSNumber *siteId</Declaration>
+			
+			
+			<Anchor>//api/name/siteId</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GeLoSite/siteId</TokenIdentifier>
+			<Abstract type="html">identifier for the site</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSNumber *siteId</Declaration>
+			
+			
+			<Anchor>//api/name/siteId</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/setName:</TokenIdentifier>
+			<Abstract type="html">name of the site</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/name</TokenIdentifier>
+			<Abstract type="html">name of the site</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GeLoSite/name</TokenIdentifier>
+			<Abstract type="html">name of the site</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/setLogo:</TokenIdentifier>
+			<Abstract type="html">URL for a logo for the site</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *logo</Declaration>
+			
+			
+			<Anchor>//api/name/logo</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/logo</TokenIdentifier>
+			<Abstract type="html">URL for a logo for the site</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *logo</Declaration>
+			
+			
+			<Anchor>//api/name/logo</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GeLoSite/logo</TokenIdentifier>
+			<Abstract type="html">URL for a logo for the site</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *logo</Declaration>
+			
+			
+			<Anchor>//api/name/logo</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/setBackground:</TokenIdentifier>
+			<Abstract type="html">background image for the site</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *background</Declaration>
+			
+			
+			<Anchor>//api/name/background</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/background</TokenIdentifier>
+			<Abstract type="html">background image for the site</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *background</Declaration>
+			
+			
+			<Anchor>//api/name/background</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GeLoSite/background</TokenIdentifier>
+			<Abstract type="html">background image for the site</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *background</Declaration>
+			
+			
+			<Anchor>//api/name/background</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/setUpdatedAt:</TokenIdentifier>
+			<Abstract type="html">date the site was last updated</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSDate *updatedAt</Declaration>
+			
+			
+			<Anchor>//api/name/updatedAt</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/updatedAt</TokenIdentifier>
+			<Abstract type="html">date the site was last updated</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSDate *updatedAt</Declaration>
+			
+			
+			<Anchor>//api/name/updatedAt</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GeLoSite/updatedAt</TokenIdentifier>
+			<Abstract type="html">date the site was last updated</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSDate *updatedAt</Declaration>
+			
+			
+			<Anchor>//api/name/updatedAt</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/setDescription:</TokenIdentifier>
+			<Abstract type="html">description of the site</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *description</Declaration>
+			
+			
+			<Anchor>//api/name/description</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/description</TokenIdentifier>
+			<Abstract type="html">description of the site</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *description</Declaration>
+			
+			
+			<Anchor>//api/name/description</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GeLoSite/description</TokenIdentifier>
+			<Abstract type="html">description of the site</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *description</Declaration>
+			
+			
+			<Anchor>//api/name/description</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
