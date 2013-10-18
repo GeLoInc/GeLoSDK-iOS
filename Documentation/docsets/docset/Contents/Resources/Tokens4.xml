@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GeLoCache.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GeLoCache</TokenIdentifier>
+			<Abstract type="html">GeLoCache stores and serves content from the GeLo CMS.</Abstract>
+			<DeclaredIn>GeLoCache.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GeLoCache/cacheDirectory</TokenIdentifier>
+			<Abstract type="html">Path on the device where cache data is stored</Abstract>
+			<DeclaredIn>GeLoCache.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)cacheDirectory</Declaration>
+			
+			
+			<Anchor>//api/name/cacheDirectory</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoCache/clearCache</TokenIdentifier>
+			<Abstract type="html">Clears the cache</Abstract>
+			<DeclaredIn>GeLoCache.h</DeclaredIn>
+			
+			<Declaration>- (void)clearCache</Declaration>
+			
+			
+			<Anchor>//api/name/clearCache</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoCache/loadTours</TokenIdentifier>
+			<Abstract type="html">Fetches and caches a list of available tours.</Abstract>
+			<DeclaredIn>GeLoCache.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)loadTours</Declaration>
+			
+			<ReturnValue><Abstract type="html">array of tours if tours are cached, otherwise nil</Abstract></ReturnValue>
+			<Anchor>//api/name/loadTours</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoCache/loadTour:</TokenIdentifier>
+			<Abstract type="html">Fetches and caches a single tour.</Abstract>
+			<DeclaredIn>GeLoCache.h</DeclaredIn>
+			
+			<Declaration>- (GeLoTour *)loadTour:(NSNumber *)tourId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tourId</Name>
+					<Abstract type="html">id of a GeLoTour</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a GeLoTour if the tour is cached, otherwise nil</Abstract></ReturnValue>
+			<Anchor>//api/name/loadTour:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoCache/loadSites</TokenIdentifier>
+			<Abstract type="html">Fetches and caches a list of available sites.</Abstract>
+			<DeclaredIn>GeLoCache.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)loadSites</Declaration>
+			
+			<ReturnValue><Abstract type="html">array of sites if sites are cached, otherwise nil</Abstract></ReturnValue>
+			<Anchor>//api/name/loadSites</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoCache/loadSite:</TokenIdentifier>
+			<Abstract type="html">Fetches and caches a single GeLoSite.</Abstract>
+			<DeclaredIn>GeLoCache.h</DeclaredIn>
+			
+			<Declaration>- (GeLoSite *)loadSite:(NSNumber *)siteId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>siteId</Name>
+					<Abstract type="html">id of a GeLoSite</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a GeLoSite if the site is cached, otherwise nil</Abstract></ReturnValue>
+			<Anchor>//api/name/loadSite:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoCache/loadImage:</TokenIdentifier>
+			<Abstract type="html">Fetches and caches a single image belonging to a GeLoBeacon</Abstract>
+			<DeclaredIn>GeLoCache.h</DeclaredIn>
+			
+			<Declaration>- (UIImage *)loadImage:(NSString *)imageUrl</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>imageUrl</Name>
+					<Abstract type="html">url for an image from the GeLo CMS</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the image if it is cached, otherwise nil</Abstract></ReturnValue>
+			<Anchor>//api/name/loadImage:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoCache/loadAudio:</TokenIdentifier>
+			<Abstract type="html">Fetches and caches a single audio belonging to a GeLoBeacon</Abstract>
+			<DeclaredIn>GeLoCache.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)loadAudio:(NSString *)audioUrl</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>audioUrl</Name>
+					<Abstract type="html">url for an audio from the GeLo CMS</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the audio data if it is cached, otherwise nil</Abstract></ReturnValue>
+			<Anchor>//api/name/loadAudio:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoCache/loadBeaconList</TokenIdentifier>
+			<Abstract type="html">Fetches and caches a list of GeLoBeacons</Abstract>
+			<DeclaredIn>GeLoCache.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)loadBeaconList</Declaration>
+			
+			<ReturnValue><Abstract type="html">dictionary of beacons if it is cached, otherwise nil</Abstract></ReturnValue>
+			<Anchor>//api/name/loadBeaconList</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
