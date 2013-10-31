@@ -1,4 +1,4 @@
-#Appledoc
+#github.io Page
 http://geloinc.github.io/GeLoSDK/
 
 #Using the GeLoSDK
