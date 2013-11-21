@@ -230,13 +230,25 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/GeLoTour/mediaCount</TokenIdentifier>
-			<Abstract type="html">Number of content items (images and auidos) associated with the tour</Abstract>
+			<Abstract type="html">Number of content items (images and audios) associated with the tour</Abstract>
 			<DeclaredIn>GeLoTour.h</DeclaredIn>
 			
 			<Declaration>- (NSInteger)mediaCount</Declaration>
 			
 			
 			<Anchor>//api/name/mediaCount</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoTour/recoveredMediaCount</TokenIdentifier>
+			<Abstract type="html">Number of content items (images and audios) that need to be downloaded after the application fails to download them the first time</Abstract>
+			<DeclaredIn>GeLoTour.h</DeclaredIn>
+			
+			<Declaration>- (NSInteger)recoveredMediaCount</Declaration>
+			
+			
+			<Anchor>//api/name/recoveredMediaCount</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
