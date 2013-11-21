@@ -38,7 +38,7 @@ While `GeLoCache` can emit the following notifications:
 	NSMutableDictionary		*tourCache;
     NSMutableDictionary     *siteCache;
     NSMutableDictionary     *beaconListCache;
-    dispatch_queue_t        serialQueue;
+    NSMutableArray          *mediaQueue;
 }
 
 + (id)sharedCache;

@@ -11,7 +11,9 @@
 /**
  `GeLoTour` is a data model that represents tour information from the CMS
  */
-@interface GeLoTour : NSObject
+@interface GeLoTour : NSObject  {
+    NSInteger recoveredMedia;
+}
 
 /**
  identifier of the tour
@@ -27,6 +29,10 @@
  URL for a map of the tour.
  */
 @property (nonatomic) NSString  *map;
+
+@property (nonatomic) NSString *bannerAdPhoneUrl;
+@property (nonatomic) NSString *bannerAdTabletUrl;
+@property (nonatomic) NSString *bannerAdUrl;
 
 /**
  Data the tour was last updated
@@ -52,10 +58,16 @@
 - (BOOL)updateNeeded:(NSDate *)updatedAt;
 
 - (BOOL)containsBeaconId:(NSInteger)beaconId;
+- (void)addRecoveredMedia:(NSInteger)count;
 
 /**
- Number of content items (images and auidos) associated with the tour
+ Number of content items (images and audios) associated with the tour
  */
 - (NSInteger)mediaCount;
+
+/**
+ Number of content items (images and audios) that need to be downloaded after the application fails to download them the first time
+ */
+- (NSInteger)recoveredMediaCount;
 
 @end

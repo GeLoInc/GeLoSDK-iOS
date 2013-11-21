@@ -17,11 +17,12 @@
     NSInteger           signalStrength;
     NSInteger           receivedRSSI;
 	NSUInteger			timeToLive;
+    NSInteger           txPower;
 }
 
 + (id)beaconWithData:(NSData *)_data signalStrength:(NSInteger)_signal timeToLive:(NSUInteger)_ttl;
 
-- (id)initWithId:(NSUInteger)_id signalStrength:(NSInteger)_signal timeToLive:(NSUInteger)_ttl;
+- (id)initWithId:(NSUInteger)_id signalStrength:(NSInteger)_signal timeToLive:(NSUInteger)_ttl txPower:(int8_t)_tx;
 - (id)initWithData:(NSData *)_data signalStrength:(NSInteger)_signal timeToLive:(NSUInteger)_ttl;
 
 - (void)addSignalStrength:(NSNumber *)signalStrength;
@@ -46,6 +47,13 @@
  The length of time the beacon will be visible after being found
  */
 @property (readonly, assign) NSUInteger timeToLive;
+/**
+ The transmision power of the beacon.
+ 2: High
+ 1: Medium
+ 0: Low
+ */
+@property (readonly, assign) NSInteger txPower;
 
 ///---------------------------------------------------
 /// @name Retrieving information for a physical beacon

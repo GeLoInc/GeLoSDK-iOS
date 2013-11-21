@@ -157,6 +157,51 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeacon/setTxPower:</TokenIdentifier>
+			<Abstract type="html">The transmision power of the beacon.
+2: High
+1: Medium
+0: Low</Abstract>
+			<DeclaredIn>GeLoBeacon.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, assign) NSInteger txPower</Declaration>
+			
+			
+			<Anchor>//api/name/txPower</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeacon/txPower</TokenIdentifier>
+			<Abstract type="html">The transmision power of the beacon.
+2: High
+1: Medium
+0: Low</Abstract>
+			<DeclaredIn>GeLoBeacon.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, assign) NSInteger txPower</Declaration>
+			
+			
+			<Anchor>//api/name/txPower</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GeLoBeacon/txPower</TokenIdentifier>
+			<Abstract type="html">The transmision power of the beacon.
+2: High
+1: Medium
+0: Low</Abstract>
+			<DeclaredIn>GeLoBeacon.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, assign) NSInteger txPower</Declaration>
+			
+			
+			<Anchor>//api/name/txPower</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeacon/info</TokenIdentifier>
 			<Abstract type="html">Information from the GeLoCMS associated with the beacon</Abstract>
 			<DeclaredIn>GeLoBeacon.h</DeclaredIn>

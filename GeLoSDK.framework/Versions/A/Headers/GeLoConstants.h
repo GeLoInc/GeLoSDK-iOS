@@ -37,6 +37,7 @@
 #define kGeLoBeaconListLoaded       @"GeLoBeaconListLoaded"
 #define kGeLoCacheBeaconListLoaded  @"GeLoCacheBeaconListLoaded"
 #define kGeLoBeaconImageLoaded      @"GeLoBeaconImageLoaded"
+#define kGeLoBeaconAudioLoaded      @"GeLoBeaconAudioLoaded"
 #define kGeLoBeaconMediaLoaded      @"GeLoBeaconMediaLoaded"
 
 #endif

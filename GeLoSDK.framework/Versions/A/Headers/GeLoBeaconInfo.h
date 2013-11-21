@@ -51,6 +51,11 @@
  */
 @property (nonatomic) NSString *mapUrl;
 
+
+@property (nonatomic) NSString *bannerAdPhoneUrl;
+@property (nonatomic) NSString *bannerAdTabletUrl;
+@property (nonatomic) NSString *bannerAdUrl;
+
 + (id)beaconInfoFromJson:(NSDictionary *)dictionary;
 - (id)initWithJson:(NSDictionary *)dictionary;
 

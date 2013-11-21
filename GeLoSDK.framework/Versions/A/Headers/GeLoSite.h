@@ -50,5 +50,6 @@
 - (id)initWithFile:(NSString *)path;
 
 - (BOOL)updateNeeded:(NSDate *)updatedAt;
+- (NSInteger)mediaCount;
 
 @end
