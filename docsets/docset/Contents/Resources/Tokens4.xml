@@ -140,6 +140,23 @@
             <NodeRef refid="4"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoCache/siteForBeaconId:</TokenIdentifier>
+			<Abstract type="html">Fetches and returns the siteId for the given beaconId</Abstract>
+			<DeclaredIn>GeLoCache.h</DeclaredIn>
+			
+			<Declaration>- (NSInteger)siteForBeaconId:(NSInteger)beaconId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>beaconId</Name>
+					<Abstract type="html">The id for the given beacon.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">NSInteger siteId</Abstract></ReturnValue>
+			<Anchor>//api/name/siteForBeaconId:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
         
 	</File>
 </Tokens>

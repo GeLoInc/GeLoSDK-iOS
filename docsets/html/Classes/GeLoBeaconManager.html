@@ -47,6 +47,8 @@
 	
 	<option value="//api/name/currentTour">&nbsp;&nbsp;&nbsp;&nbsp;- currentTour</option>
 	
+	<option value="//api/name/expireBeacon:">&nbsp;&nbsp;&nbsp;&nbsp;- expireBeacon:</option>
+	
 	<option value="//api/name/includeBetaTours">&nbsp;&nbsp;&nbsp;&nbsp;- includeBetaTours</option>
 	
 	<option value="//api/name/infoForBeaconId:">&nbsp;&nbsp;&nbsp;&nbsp;- infoForBeaconId:</option>
@@ -75,9 +77,13 @@
 	
 	<option value="//api/name/setFalloff:forId:">&nbsp;&nbsp;&nbsp;&nbsp;- setFalloff:forId:</option>
 	
+	<option value="//api/name/setNearestBeacon:">&nbsp;&nbsp;&nbsp;&nbsp;- setNearestBeacon:</option>
+	
 	<option value="//api/name/startScanningForBeacons">&nbsp;&nbsp;&nbsp;&nbsp;- startScanningForBeacons</option>
 	
 	<option value="//api/name/stopScanningForBeacons">&nbsp;&nbsp;&nbsp;&nbsp;- stopScanningForBeacons</option>
+	
+	<option value="//api/name/unsetNearestBeacon">&nbsp;&nbsp;&nbsp;&nbsp;- unsetNearestBeacon</option>
 	
 	
 	
@@ -121,6 +127,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentTour">currentTour</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/expireBeacon:">expireBeacon:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/includeBetaTours">includeBetaTours</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/infoForBeaconId:">infoForBeaconId:</a></span></li>
@@ -149,9 +157,13 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setFalloff:forId:">setFalloff:forId:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setNearestBeacon:">setNearestBeacon:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startScanningForBeacons">startScanningForBeacons</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopScanningForBeacons">stopScanningForBeacons</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unsetNearestBeacon">unsetNearestBeacon</a></span></li>
 	
 </ul></li>
 
@@ -372,6 +384,32 @@
 	</span>
 	
 	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unsetNearestBeacon">&ndash;&nbsp;unsetNearestBeacon</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setNearestBeacon:">&ndash;&nbsp;setNearestBeacon:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/expireBeacon:">&ndash;&nbsp;expireBeacon:</a></code>
+	</span>
+	
+	
 </li>
 						</ul>
 						
@@ -465,6 +503,59 @@
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>Get the current tour that the beacon manager is using to determin beacon info</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GeLoBeaconManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/expireBeacon:" title="expireBeacon:"></a>
+	<h3 class="subsubtitle method-title">expireBeacon:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Expires the nearest beacon by clearing the nearest beacon and posting a
+kGeLoNearestBeaconExpired notification.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)expireBeacon:(GeLoBeacon *)<em>beacon</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>beacon</em></dt>
+			<dd><p>The expired beacon.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Expires the nearest beacon by clearing the nearest beacon and posting a
+kGeLoNearestBeaconExpired notification.</p>
 	</div>
 	
 	
@@ -1163,6 +1254,61 @@ with the updated list after the remote host has responded.</p>
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/setNearestBeacon:" title="setNearestBeacon:"></a>
+	<h3 class="subsubtitle method-title">setNearestBeacon:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the nearest beacon. Posts a kGeLoNearestBeaconChanged notification
+if the given beacon is different than the current nearest beacon. Returns
+the nearest beacon.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)setNearestBeacon:(GeLoBeacon *)<em>beacon</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>beacon</em></dt>
+			<dd><p>The nearest beacon.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the nearest beacon. Posts a kGeLoNearestBeaconChanged notification
+if the given beacon is different than the current nearest beacon. Returns
+the nearest beacon.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GeLoBeaconManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/startScanningForBeacons" title="startScanningForBeacons"></a>
 	<h3 class="subsubtitle method-title">startScanningForBeacons</h3>
 	
@@ -1244,6 +1390,47 @@ with the updated list after the remote host has responded.</p>
 	
 </div>
 						
+						<div class="section-method">
+	<a name="//api/name/unsetNearestBeacon" title="unsetNearestBeacon"></a>
+	<h3 class="subsubtitle method-title">unsetNearestBeacon</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Unsets the nearest beacon.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)unsetNearestBeacon</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Unsets the nearest beacon.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GeLoBeaconManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
 					</div>
 					
 					
@@ -1259,7 +1446,7 @@ with the updated list after the remote host has responded.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 GeLo. All rights reserved. (Last updated: 2013-11-21)</span><br />
+						<p><span class="copyright">&copy; 2014 GeLo. All rights reserved. (Last updated: 2014-01-21)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						

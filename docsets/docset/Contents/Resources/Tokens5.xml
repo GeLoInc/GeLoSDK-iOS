@@ -228,6 +228,66 @@
             <NodeRef refid="5"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/setPercentageOfMediaDownloadsComplete:</TokenIdentifier>
+			<Abstract type="html">the percentage of media assets that have been downloaded</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSNumber *percentageOfMediaDownloadsComplete</Declaration>
+			
+			<ReturnValue><Abstract type="html">the percentage of media assets that have been downloaded</Abstract></ReturnValue>
+			<Anchor>//api/name/percentageOfMediaDownloadsComplete</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/percentageOfMediaDownloadsComplete</TokenIdentifier>
+			<Abstract type="html">the percentage of media assets that have been downloaded</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSNumber *percentageOfMediaDownloadsComplete</Declaration>
+			
+			<ReturnValue><Abstract type="html">the percentage of media assets that have been downloaded</Abstract></ReturnValue>
+			<Anchor>//api/name/percentageOfMediaDownloadsComplete</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GeLoSite/percentageOfMediaDownloadsComplete</TokenIdentifier>
+			<Abstract type="html">the percentage of media assets that have been downloaded</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSNumber *percentageOfMediaDownloadsComplete</Declaration>
+			
+			<ReturnValue><Abstract type="html">the percentage of media assets that have been downloaded</Abstract></ReturnValue>
+			<Anchor>//api/name/percentageOfMediaDownloadsComplete</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/mediaDownloadsAreComplete</TokenIdentifier>
+			<Abstract type="html">TRUE|FALSE depending on if all media downloads are completed.</Abstract>
+			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)mediaDownloadsAreComplete</Declaration>
+			
+			<ReturnValue><Abstract type="html">TRUE|FALSE depending on if all media downloads are completed.</Abstract></ReturnValue>
+			<Anchor>//api/name/mediaDownloadsAreComplete</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/mediaCount</TokenIdentifier>
+			<Abstract type="html">Number of content items (images and audios) associated with this object.</Abstract>
+			<DeclaredIn>GeLoSite.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)mediaCount</Declaration>
+			
+			
+			<Anchor>//api/name/mediaCount</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
         
 	</File>
 </Tokens>

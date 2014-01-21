@@ -267,6 +267,55 @@ with the updated list after the remote host has responded.</Abstract>
             <NodeRef refid="3"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/unsetNearestBeacon</TokenIdentifier>
+			<Abstract type="html">Unsets the nearest beacon.</Abstract>
+			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
+			
+			<Declaration>- (void)unsetNearestBeacon</Declaration>
+			
+			
+			<Anchor>//api/name/unsetNearestBeacon</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/setNearestBeacon:</TokenIdentifier>
+			<Abstract type="html">Sets the nearest beacon. Posts a kGeLoNearestBeaconChanged notification
+if the given beacon is different than the current nearest beacon. Returns
+the nearest beacon.</Abstract>
+			<DeclaredIn>GeLoBeaconManager.m</DeclaredIn>
+			
+			<Declaration>- (id)setNearestBeacon:(GeLoBeacon *)beacon</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>beacon</Name>
+					<Abstract type="html">The nearest beacon.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setNearestBeacon:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/expireBeacon:</TokenIdentifier>
+			<Abstract type="html">Expires the nearest beacon by clearing the nearest beacon and posting a
+kGeLoNearestBeaconExpired notification.</Abstract>
+			<DeclaredIn>GeLoBeaconManager.m</DeclaredIn>
+			
+			<Declaration>- (void)expireBeacon:(GeLoBeacon *)beacon</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>beacon</Name>
+					<Abstract type="html">The expired beacon.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/expireBeacon:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
         
 	</File>
 </Tokens>
