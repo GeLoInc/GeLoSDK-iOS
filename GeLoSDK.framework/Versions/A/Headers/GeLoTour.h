@@ -3,17 +3,16 @@
 //  GeLoSDK
 //
 //  Created by Tim Bugai on 5/22/13.
-//  Copyright (c) 2013 Collective Idea. All rights reserved.
+//  Copyright (c) 2013 GeLo Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import "GeLoMediaDownloading.h"
 
 /**
  `GeLoTour` is a data model that represents tour information from the CMS
  */
-@interface GeLoTour : NSObject  {
-    NSInteger recoveredMedia;
-}
+@interface GeLoTour : NSObject <GeLoMediaDownloading> 
 
 /**
  identifier of the tour
@@ -30,8 +29,19 @@
  */
 @property (nonatomic) NSString  *map;
 
-@property (nonatomic) NSString *bannerAdPhoneUrl;
-@property (nonatomic) NSString *bannerAdTabletUrl;
+/**
+ URL for an iPhone banner ad
+ */
+@property (nonatomic) NSString *bannerAdPhoneImageUrl;
+
+/**
+ URL for an iPad banner ad
+ */
+@property (nonatomic) NSString *bannerAdTabletImageUrl;
+
+/**
+ A link that the banner ads can redirect to
+ */
 @property (nonatomic) NSString *bannerAdUrl;
 
 /**
@@ -58,16 +68,11 @@
 - (BOOL)updateNeeded:(NSDate *)updatedAt;
 
 - (BOOL)containsBeaconId:(NSInteger)beaconId;
-- (void)addRecoveredMedia:(NSInteger)count;
 
-/**
- Number of content items (images and audios) associated with the tour
- */
-- (NSInteger)mediaCount;
 
-/**
- Number of content items (images and audios) that need to be downloaded after the application fails to download them the first time
- */
-- (NSInteger)recoveredMediaCount;
+# pragma mark - GeLoMediaDownloading
+
+@property (nonatomic) NSNumber *percentageOfMediaDownloadsComplete;
+- (BOOL) mediaDownloadsAreComplete;
 
 @end

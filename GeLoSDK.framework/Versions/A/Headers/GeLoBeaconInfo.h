@@ -51,9 +51,19 @@
  */
 @property (nonatomic) NSString *mapUrl;
 
+/**
+ URL for an iPhone banner image associated with a beacon
+ */
+@property (nonatomic) NSString *bannerAdPhoneImageUrl;
 
-@property (nonatomic) NSString *bannerAdPhoneUrl;
-@property (nonatomic) NSString *bannerAdTabletUrl;
+/**
+ URL for an iPad banner image associated with a beacon.
+ */
+@property (nonatomic) NSString *bannerAdTabletImageUrl;
+
+/**
+ URL that is associated with the banner ad images.
+ */
 @property (nonatomic) NSString *bannerAdUrl;
 
 + (id)beaconInfoFromJson:(NSDictionary *)dictionary;

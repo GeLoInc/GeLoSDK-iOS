@@ -3,11 +3,17 @@
 //  GeLoSDK
 //
 //  Created by Thomas Peterson on 9/6/13.
-//  Copyright (c) 2013 Collective Idea. All rights reserved.
+//  Copyright (c) 2013 GeLo Inc. All rights reserved.
 //
 
 #ifndef GeLoSDK_GeLoConstants_h
 #define GeLoSDK_GeLoConstants_h
+
+// Bluetooth LE Notifications
+#define kGeLoBTLEUnsupported        @"GeLoBTLEUnsupported"
+#define kGeLoBTLEPoweredOff         @"GeLoBTLEPoweredOff"
+#define kGeLoBTLEPoweredOn          @"GeLoBTLEPoweredOn"
+#define kGeLoBTLEStateUnknown       @"GeLoBTLEStateUnknown"
 
 // Manager Notifications
 #define kGeLoBeaconFound            @"GeLoBeaconFound"
@@ -39,5 +45,17 @@
 #define kGeLoBeaconImageLoaded      @"GeLoBeaconImageLoaded"
 #define kGeLoBeaconAudioLoaded      @"GeLoBeaconAudioLoaded"
 #define kGeLoBeaconMediaLoaded      @"GeLoBeaconMediaLoaded"
+
+// Beacon Values
+#define kGeLoBeaconHardwareCompanyIdentifier      0xC8
+#define kGeLoBeaconSignalCeiling                  -40
+#define kGeLoPacketSize                           10
+
+// Software/VirtualBeacon
+#define kGeLoSoftwareBeaconServiceLocalName   @"GeLoSoftwareBeacon"
+
+// Software/VirtualBeacon Notifications
+#define kGeLoSoftwareBeaconAdvertisingStarted @"GeLoSoftwareBeacon:advertisingStarted"
+#define kGeLoSoftwareBeaconAdvertisingStopped @"GeLoSoftwareBeacon:advertisingStopped"
 
 #endif

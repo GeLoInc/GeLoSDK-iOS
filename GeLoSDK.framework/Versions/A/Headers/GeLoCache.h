@@ -1,4 +1,7 @@
 #import <UIKit/UIKit.h>
+#import "GeLoSiteLoader.h"
+#import "GeLoMediaQueueItem.h"
+
 @class GeLoTour;
 
 /**
@@ -32,16 +35,9 @@ While `GeLoCache` can emit the following notifications:
  - `kGeLoBeaconMediaLoaded`
 */
 
-@interface GeLoCache : NSObject {
-	NSMutableDictionary		*imageCache;
-    NSMutableDictionary		*audioCache;
-	NSMutableDictionary		*tourCache;
-    NSMutableDictionary     *siteCache;
-    NSMutableDictionary     *beaconListCache;
-    NSMutableArray          *mediaQueue;
-}
+@interface GeLoCache : NSObject 
 
-+ (id)sharedCache;
++ (GeLoCache *)sharedCache;
 
 /**
  Path on the device where cache data is stored
@@ -107,6 +103,14 @@ Clears the cache
  @returns dictionary of beacons if it is cached, otherwise `nil`
  */
 - (NSDictionary *)loadBeaconList;
+
+/**
+ Fetches and returns the siteId for the given beaconId
+
+ @param beaconId The id for the given beacon.
+ @returns NSInteger siteId
+ */
+- (NSInteger) siteForBeaconId:(NSInteger) beaconId;
 
 @property (nonatomic) NSNotificationCenter *notificationCenter;
 

@@ -3,7 +3,7 @@
 //  GeLo
 //
 //  Created by Tim Bugai on 5/14/13.
-//  Copyright (c) 2013 Collective Idea. All rights reserved.
+//  Copyright (c) 2013 GeLo Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

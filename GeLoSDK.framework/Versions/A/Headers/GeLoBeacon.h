@@ -3,7 +3,7 @@
 //  GeLoSDK
 //
 //  Created by Tim Bugai on 1/21/13.
-//  Copyright (c) 2013 Collective Idea. All rights reserved.
+//  Copyright (c) 2013 GeLo Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -19,8 +19,6 @@
 	NSUInteger			timeToLive;
     NSInteger           txPower;
 }
-
-+ (id)beaconWithData:(NSData *)_data signalStrength:(NSInteger)_signal timeToLive:(NSUInteger)_ttl;
 
 - (id)initWithId:(NSUInteger)_id signalStrength:(NSInteger)_signal timeToLive:(NSUInteger)_ttl txPower:(int8_t)_tx;
 - (id)initWithData:(NSData *)_data signalStrength:(NSInteger)_signal timeToLive:(NSUInteger)_ttl;

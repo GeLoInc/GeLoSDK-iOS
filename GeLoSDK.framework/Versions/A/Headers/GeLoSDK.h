@@ -3,7 +3,7 @@
 //  GeLoSDK
 //
 //  Created by Tim Bugai on 1/21/13.
-//  Copyright (c) 2013 Collective Idea. All rights reserved.
+//  Copyright (c) 2013 GeLo Inc. All rights reserved.
 //
 #import "NSDate+ISO_8601.h"
 

@@ -3,15 +3,16 @@
 //  GeLoSDK
 //
 //  Created by Thomas Peterson on 8/30/13.
-//  Copyright (c) 2013 Collective Idea. All rights reserved.
+//  Copyright (c) 2013 GeLo Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import "GeLoMediaDownloading.h"
 
 /**
  `GeLoSite` is a data model representing a site from the CMS
  */
-@interface GeLoSite : NSObject
+@interface GeLoSite : NSObject <GeLoMediaDownloading>
 
 /**
  identifier for the site
@@ -50,6 +51,11 @@
 - (id)initWithFile:(NSString *)path;
 
 - (BOOL)updateNeeded:(NSDate *)updatedAt;
-- (NSInteger)mediaCount;
+
+
+# pragma mark - GeLoMediaDownloading
+
+@property (nonatomic, copy) NSNumber *percentageOfMediaDownloadsComplete;
+- (BOOL) mediaDownloadsAreComplete;
 
 @end
