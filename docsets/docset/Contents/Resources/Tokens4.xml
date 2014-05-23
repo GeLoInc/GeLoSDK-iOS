@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GeLoPlatformManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GeLoPlatformManager</TokenIdentifier>
+			<Abstract type="html">GeLoPlatformManager handles communication between the GeLo platform and the device</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GeLoPlatformManager/sharedInstance</TokenIdentifier>
+			<Abstract type="html">Class method that is used to access the platform manager singleton.</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
+			
+			<Declaration>+ (id)sharedInstance</Declaration>
+			
+			
+			<Anchor>//api/name/sharedInstance</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/setOAuth2ClientID:username:andPassword:</TokenIdentifier>
+			<Abstract type="html">Sets OAuth2 authentication credentials for platform access. Credentials can be retrieved from the Gelo Platform.</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
+			
+			<Declaration>- (void)setOAuth2ClientID:(NSString *)clientID username:(NSString *)username andPassword:(NSString *)password</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>clientID</Name>
+					<Abstract type="html">the client id provided by the OAuth application</Abstract>
+				</Parameter><Parameter>
+					<Name>username</Name>
+					<Abstract type="html">the username provided by the platfom</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract type="html">the password provided by the password</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setOAuth2ClientID:username:andPassword:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/shouldCache:</TokenIdentifier>
+			<Abstract type="html">Sets whether the platform manager should cache content</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
+			
+			<Declaration>- (void)shouldCache:(BOOL)shouldCache</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>shouldCache</Name>
+					<Abstract type="html">whether content should cache</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shouldCache:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/currentSite</TokenIdentifier>
+			<Abstract type="html">Gets the current site</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
+			
+			<Declaration>- (GeLoSite *)currentSite</Declaration>
+			
+			<ReturnValue><Abstract type="html">returns an instance of GeLoSite</Abstract></ReturnValue>
+			<Anchor>//api/name/currentSite</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/currentTour</TokenIdentifier>
+			<Abstract type="html">Gets the current tour</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
+			
+			<Declaration>- (GeLoTour *)currentTour</Declaration>
+			
+			<ReturnValue><Abstract type="html">returns an instance of GeLoTour</Abstract></ReturnValue>
+			<Anchor>//api/name/currentTour</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/loadSiteById:</TokenIdentifier>
+			<Abstract type="html">Loads the a site from the platform or cache</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
+			
+			<Declaration>- (GeLoSite *)loadSiteById:(NSInteger)siteId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>siteId</Name>
+					<Abstract type="html">the requested site id</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">an instance of GeLoSite if the given site is cached</Abstract></ReturnValue>
+			<Anchor>//api/name/loadSiteById:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/loadTourById:</TokenIdentifier>
+			<Abstract type="html">Loads the a tour from the platform or cache</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
+			
+			<Declaration>- (GeLoTour *)loadTourById:(NSInteger)tourId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tourId</Name>
+					<Abstract type="html">the request tour id</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">an instance of GeLoTour if the given tour is cached</Abstract></ReturnValue>
+			<Anchor>//api/name/loadTourById:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/loadKnownSites</TokenIdentifier>
+			<Abstract type="html">Gets list of sites that the application developer is authenticated for.</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)loadKnownSites</Declaration>
+			
+			<ReturnValue><Abstract type="html">the an array of cached sites.</Abstract></ReturnValue>
+			<Anchor>//api/name/loadKnownSites</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/loadKnownTours</TokenIdentifier>
+			<Abstract type="html">Gets list of tours that the application developer is authenticated for.</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)loadKnownTours</Declaration>
+			
+			<ReturnValue><Abstract type="html">the an array of cached tours.</Abstract></ReturnValue>
+			<Anchor>//api/name/loadKnownTours</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/setCurrentTour:</TokenIdentifier>
+			<Abstract type="html">Sets the current tour. The beacon manager will use this site to filter detected beacons</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
+			
+			<Declaration>- (void)setCurrentTour:(GeLoTour *)tour</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tour</Name>
+					<Abstract type="html">an instance of GeLoTour</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setCurrentTour:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/setCurrentSite:</TokenIdentifier>
+			<Abstract type="html">Sets the current site.</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
+			
+			<Declaration>- (void)setCurrentSite:(GeLoSite *)site</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>site</Name>
+					<Abstract type="html">an instance of GeLoTour</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setCurrentSite:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/getMediaPath:</TokenIdentifier>
+			<Abstract type="html">Gets the local path for a given media url</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getMediaPath:(NSString *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">media url from the platform</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">an NSString with the local path</Abstract></ReturnValue>
+			<Anchor>//api/name/getMediaPath:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/infoForBeaconId:</TokenIdentifier>
+			<Abstract type="html">Gets an info object for the given beaconId</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
+			
+			<Declaration>- (GeLoBeaconInfo *)infoForBeaconId:(NSNumber *)beaconId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>beaconId</Name>
+					<Abstract type="html">id for a physical beacon</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">an instance of GeLoBeaconInfo</Abstract></ReturnValue>
+			<Anchor>//api/name/infoForBeaconId:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
