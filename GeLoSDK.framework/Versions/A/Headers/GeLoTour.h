@@ -8,71 +8,64 @@
 
 #import <Foundation/Foundation.h>
 #import "GeLoMediaDownloading.h"
+#import <UIKit/UIKit.h>
 
 /**
  `GeLoTour` is a data model that represents tour information from the CMS
  */
-@interface GeLoTour : NSObject <GeLoMediaDownloading> 
+@interface GeLoTour : NSObject <GeLoMediaDownloading>
 
 /**
- identifier of the tour
+ The identifier assigned by the platform.
  */
-@property (nonatomic) NSNumber  *tourId;
+@property (nonatomic) NSNumber *tourId;
 
-/**
- name of the tour
- */
-@property (nonatomic) NSString  *name;
 
-/**
- URL for a map of the tour.
- */
-@property (nonatomic) NSString  *map;
-
-/**
- URL for an iPhone banner ad
- */
-@property (nonatomic) NSString *bannerAdPhoneImageUrl;
-
-/**
- URL for an iPad banner ad
- */
-@property (nonatomic) NSString *bannerAdTabletImageUrl;
-
-/**
- A link that the banner ads can redirect to
- */
-@property (nonatomic) NSString *bannerAdUrl;
-
-/**
- Data the tour was last updated
- */
-@property (nonatomic) NSDate	*updatedAt;
-
-/**
- Dictionary of `GeLoBeaconInfos` associated with the tour
- */
-@property (nonatomic, readonly) NSDictionary	*beaconInfo;
-
-/**
- identifier of the site which the tour belongs to
- */
 @property (nonatomic) NSNumber *siteId;
+/**
+ The name of the tour.
+ */
+@property (nonatomic) NSString *name;
 
-+ (id)tourFromJson:(NSDictionary *)dictionary;
-- (id)initWithJson:(NSDictionary *)dictionary;
+/**
+ An image associated with the tour.
+ */
+@property (nonatomic) NSString *imageURL;
 
-+ (id)tourFromFile:(NSString *)path;
-- (id)initWithFile:(NSString *)path;
+/**
+ The color used by Spaces for bar background color.
+ */
+@property (nonatomic) UIColor *barColor;
 
-- (BOOL)updateNeeded:(NSDate *)updatedAt;
+/**
+ The text color for the tour.
+ */
+@property (nonatomic) UIColor *textColor;
 
+/**
+ The color for section text.
+ */
+@property (nonatomic) UIColor *sectionTextColor;
+
+/**
+ An array of beacon infos associated with the tour.
+ */
+@property (nonatomic) NSMutableDictionary *beaconInfos;
+
+/**
+ The last time that the tour was updated.
+ */
+@property (nonatomic) NSDate   *updatedAt;
+
+- (id)initWithTourJSON:(NSDictionary *)json;
+- (id)initWithPartialTourJSON:(NSDictionary *)tour;
+- (void)withAdditionalJSON:(NSDictionary *)JSON;
 - (BOOL)containsBeaconId:(NSInteger)beaconId;
-
+- (BOOL)updateNeeded:(NSDate *)updatedAt;
 
 # pragma mark - GeLoMediaDownloading
 
-@property (nonatomic) NSNumber *percentageOfMediaDownloadsComplete;
-- (BOOL) mediaDownloadsAreComplete;
+//@property (nonatomic) NSNumber *percentageOfMediaDownloadsComplete;
+//- (BOOL) mediaDownloadsAreComplete;
 
 @end

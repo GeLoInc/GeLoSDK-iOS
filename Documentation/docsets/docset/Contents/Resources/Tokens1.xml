@@ -159,6 +159,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeacon/setTxPower:</TokenIdentifier>
 			<Abstract type="html">The transmision power of the beacon.
+3: iBeacon (TX Power unknown)
 2: High
 1: Medium
 0: Low</Abstract>
@@ -174,6 +175,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeacon/txPower</TokenIdentifier>
 			<Abstract type="html">The transmision power of the beacon.
+3: iBeacon (TX Power unknown)
 2: High
 1: Medium
 0: Low</Abstract>
@@ -189,6 +191,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/GeLoBeacon/txPower</TokenIdentifier>
 			<Abstract type="html">The transmision power of the beacon.
+3: iBeacon (TX Power unknown)
 2: High
 1: Medium
 0: Low</Abstract>

@@ -39,35 +39,24 @@
 	
 	
 	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/sharedInstance">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedInstance</option>
+	
+	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/currentSite">&nbsp;&nbsp;&nbsp;&nbsp;- currentSite</option>
-	
-	<option value="//api/name/currentTour">&nbsp;&nbsp;&nbsp;&nbsp;- currentTour</option>
-	
 	<option value="//api/name/expireBeacon:">&nbsp;&nbsp;&nbsp;&nbsp;- expireBeacon:</option>
-	
-	<option value="//api/name/includeBetaTours">&nbsp;&nbsp;&nbsp;&nbsp;- includeBetaTours</option>
-	
-	<option value="//api/name/infoForBeaconId:">&nbsp;&nbsp;&nbsp;&nbsp;- infoForBeaconId:</option>
-	
-	<option value="//api/name/isPaused">&nbsp;&nbsp;&nbsp;&nbsp;- isPaused</option>
 	
 	<option value="//api/name/isScanning">&nbsp;&nbsp;&nbsp;&nbsp;- isScanning</option>
 	
 	<option value="//api/name/knownBeacons">&nbsp;&nbsp;&nbsp;&nbsp;- knownBeacons</option>
 	
-	<option value="//api/name/knownTours">&nbsp;&nbsp;&nbsp;&nbsp;- knownTours</option>
-	
-	<option value="//api/name/loadTourById:">&nbsp;&nbsp;&nbsp;&nbsp;- loadTourById:</option>
+	<option value="//api/name/knownTourBeacons">&nbsp;&nbsp;&nbsp;&nbsp;- knownTourBeacons</option>
 	
 	<option value="//api/name/nearestBeacon">&nbsp;&nbsp;&nbsp;&nbsp;- nearestBeacon</option>
-	
-	<option value="//api/name/pauseScanningForBeacons">&nbsp;&nbsp;&nbsp;&nbsp;- pauseScanningForBeacons</option>
-	
-	<option value="//api/name/setCurrentTour:">&nbsp;&nbsp;&nbsp;&nbsp;- setCurrentTour:</option>
 	
 	<option value="//api/name/setDefaultFalloff:">&nbsp;&nbsp;&nbsp;&nbsp;- setDefaultFalloff:</option>
 	
@@ -101,13 +90,9 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuring Scanning">Configuring Scanning</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Scanning Control">Scanning Control</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Known Surroundings">Known Surroundings</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Information">Information</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuring Scanning">Configuring Scanning</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Utility Methods">Utility Methods</a></span></li>
 	
@@ -119,35 +104,25 @@
 
 
 
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedInstance">sharedInstance</a></span></li>
+	
+</ul></li>
+
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentSite">currentSite</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentTour">currentTour</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/expireBeacon:">expireBeacon:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/includeBetaTours">includeBetaTours</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/infoForBeaconId:">infoForBeaconId:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isPaused">isPaused</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isScanning">isScanning</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/knownBeacons">knownBeacons</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/knownTours">knownTours</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadTourById:">loadTourById:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/knownTourBeacons">knownTourBeacons</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/nearestBeacon">nearestBeacon</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pauseScanningForBeacons">pauseScanningForBeacons</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setCurrentTour:">setCurrentTour:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDefaultFalloff:">setDefaultFalloff:</a></span></li>
 	
@@ -192,7 +167,7 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Conforms to</td>
-	<td class="specification-value">CBCentralManagerDelegate</td>
+	<td class="specification-value">CBCentralManagerDelegate<br />GeLoCLBeaconManagerDelegate</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
 	<td class="specification-value">GeLoBeaconManager.h<br />GeLoBeaconManager.m</td>
@@ -210,23 +185,17 @@
 <p>Example:</p>
 
 <pre><code>[GeLoBeaconManager sharedInstance] startScanning];
-[GeLoBeaconManager sharedInstance] pauseScanning];
-[GeLoBeaconManager sharedInstance] resumeScanning];
+[GeLoBeaconManager sharedInstance] stopScanning];
 </code></pre>
 
 <p>While <code>GeLoBeaconManager</code> is scanning, it can emit the following notifications:</p>
 
 <ul>
-<li>kGeLoBeaconAgedGracefully</li>
-<li>kGeLoBeaconExpired</li>
-<li>kGeLoNearestBeaconExpired</li>
-<li>kGeLoNearestBeaconChanged</li>
 <li>kGeLoBeaconFound</li>
-<li>kGeLoTourLoaded</li>
-<li>kGeLoSiteLoaded</li>
-<li>kGeLoToursLoaded</li>
-<li>kGeLoSitesLoaded</li>
-<li>kGeLoBeaconListLoaded</li>
+<li>kGeLoBeaconExpired</li>
+<li>kGeLoBeaconAgedGracefully</li>
+<li>kGeLoNearestBeaconChanged</li>
+<li>kGeLoNearestBeaconExpired</li>
 </ul>
 
 					</div>
@@ -238,6 +207,46 @@
 					<div class="section section-tasks">
 						<a title="Tasks" name="tasks"></a>
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharedInstance">+&nbsp;sharedInstance</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Scanning Control" name="task_Scanning Control"></a>
+						<h3 class="subsubtitle task-title">Scanning Control</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startScanningForBeacons">&ndash;&nbsp;startScanningForBeacons</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isScanning">&ndash;&nbsp;isScanning</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopScanningForBeacons">&ndash;&nbsp;stopScanningForBeacons</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
 						
 						
 						<a title="Configuring Scanning" name="task_Configuring Scanning"></a>
@@ -268,102 +277,6 @@
 	</span>
 	
 	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/includeBetaTours">&ndash;&nbsp;includeBetaTours</a></code>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						<a title="Scanning Control" name="task_Scanning Control"></a>
-						<h3 class="subsubtitle task-title">Scanning Control</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/startScanningForBeacons">&ndash;&nbsp;startScanningForBeacons</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/isScanning">&ndash;&nbsp;isScanning</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/isPaused">&ndash;&nbsp;isPaused</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/stopScanningForBeacons">&ndash;&nbsp;stopScanningForBeacons</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/pauseScanningForBeacons">&ndash;&nbsp;pauseScanningForBeacons</a></code>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						<a title="Known Surroundings" name="task_Known Surroundings"></a>
-						<h3 class="subsubtitle task-title">Known Surroundings</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/knownBeacons">&ndash;&nbsp;knownBeacons</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/nearestBeacon">&ndash;&nbsp;nearestBeacon</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/knownTours">&ndash;&nbsp;knownTours</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/currentTour">&ndash;&nbsp;currentTour</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/currentSite">&ndash;&nbsp;currentSite</a></code>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						<a title="Information" name="task_Information"></a>
-						<h3 class="subsubtitle task-title">Information</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/infoForBeaconId:">&ndash;&nbsp;infoForBeaconId:</a></code>
-	</span>
-	
-	
 </li>
 						</ul>
 						
@@ -374,19 +287,25 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/loadTourById:">&ndash;&nbsp;loadTourById:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/setCurrentTour:">&ndash;&nbsp;setCurrentTour:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
 		<code><a href="#//api/name/unsetNearestBeacon">&ndash;&nbsp;unsetNearestBeacon</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/knownBeacons">&ndash;&nbsp;knownBeacons</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/knownTourBeacons">&ndash;&nbsp;knownTourBeacons</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/nearestBeacon">&ndash;&nbsp;nearestBeacon</a></code>
 	</span>
 	
 	
@@ -421,103 +340,63 @@
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/sharedInstance" title="sharedInstance"></a>
+	<h3 class="subsubtitle method-title">sharedInstance</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The class method used to access the beacon manager singleton.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (GeLoBeaconManager *)sharedInstance</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>an instance of beacon manager.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The class method used to access the beacon manager singleton.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GeLoBeaconManager.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
 					
 					
 					<div class="section section-methods">
 						<a title="Instance Methods" name="instance_methods"></a>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/currentSite" title="currentSite"></a>
-	<h3 class="subsubtitle method-title">currentSite</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Get the current site the the beacon maanger is using</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (GeLoSite *)currentSite</code></div>
-
-    
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>an instance of GeLoSite</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Get the current site the the beacon maanger is using</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">GeLoBeaconManager.m</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/currentTour" title="currentTour"></a>
-	<h3 class="subsubtitle method-title">currentTour</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Get the current tour that the beacon manager is using to determin beacon info</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (GeLoTour *)currentTour</code></div>
-
-    
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>an instance of GeLoTour</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Get the current tour that the beacon manager is using to determin beacon info</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">GeLoBeaconManager.m</code><br />
-	</div>				
-	
-	
-</div>
 						
 						<div class="section-method">
 	<a name="//api/name/expireBeacon:" title="expireBeacon:"></a>
@@ -556,149 +435,6 @@ kGeLoNearestBeaconExpired notification.</p>
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>Expires the nearest beacon by clearing the nearest beacon and posting a
 kGeLoNearestBeaconExpired notification.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">GeLoBeaconManager.m</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/includeBetaTours" title="includeBetaTours"></a>
-	<h3 class="subsubtitle method-title">includeBetaTours</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Tell the beacon manager to request beta sites in addition to normal ones</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)includeBetaTours</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Tell the beacon manager to request beta sites in addition to normal ones</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">GeLoBeaconManager.m</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/infoForBeaconId:" title="infoForBeaconId:"></a>
-	<h3 class="subsubtitle method-title">infoForBeaconId:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Get information about a beacon in the context of the current site</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (GeLoBeaconInfo *)infoForBeaconId:(NSNumber *)<em>beaconId</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>beaconId</em></dt>
-			<dd><p>id of a beacon</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>an instance of GeLoBeaconInfo</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Get information about a beacon in the context of the current site</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">GeLoBeaconManager.m</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/isPaused" title="isPaused"></a>
-	<h3 class="subsubtitle method-title">isPaused</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Get whether or not the beacon manager is actively scanning for beacons</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (BOOL)isPaused</code></div>
-
-    
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>a boolean indicating the paused state</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Get whether or not the beacon manager is actively scanning for beacons</p>
 	</div>
 	
 	
@@ -808,19 +544,18 @@ kGeLoNearestBeaconExpired notification.</p>
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/knownTours" title="knownTours"></a>
-	<h3 class="subsubtitle method-title">knownTours</h3>
+	<a name="//api/name/knownTourBeacons" title="knownTourBeacons"></a>
+	<h3 class="subsubtitle method-title">knownTourBeacons</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Fetches the list of sites from the remote host.  Returns currently known sites initially, then sends a notification
-with the updated list after the remote host has responded.</p>
+		<p>Get a list of beacons that belong to the current tour.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (NSArray *)knownTours</code></div>
+	<div class="method-subsection method-declaration"><code>- (NSArray *)knownTourBeacons</code></div>
 
     
 	
@@ -828,7 +563,7 @@ with the updated list after the remote host has responded.</p>
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>array of GeLoSites</p>
+		<p>an array of GeLoBeacon instances.</p>
 	</div>
 	
 	
@@ -837,59 +572,7 @@ with the updated list after the remote host has responded.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Fetches the list of sites from the remote host.  Returns currently known sites initially, then sends a notification
-with the updated list after the remote host has responded.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">GeLoBeaconManager.m</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/loadTourById:" title="loadTourById:"></a>
-	<h3 class="subsubtitle method-title">loadTourById:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Retreives a site from the remote host and sets it as the current site on the beacon manager</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)loadTourById:(NSNumber *)<em>tourId</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>tourId</em></dt>
-			<dd><p>id of a gelo site</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Retreives a site from the remote host and sets it as the current site on the beacon manager</p>
+		<p>Get a list of beacons that belong to the current tour.</p>
 	</div>
 	
 	
@@ -936,98 +619,6 @@ with the updated list after the remote host has responded.</p>
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>Get the nearest beacon</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">GeLoBeaconManager.m</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/pauseScanningForBeacons" title="pauseScanningForBeacons"></a>
-	<h3 class="subsubtitle method-title">pauseScanningForBeacons</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Pause the beacon manager from scanning for beacons</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)pauseScanningForBeacons</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Pause the beacon manager from scanning for beacons</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">GeLoBeaconManager.m</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/setCurrentTour:" title="setCurrentTour:"></a>
-	<h3 class="subsubtitle method-title">setCurrentTour:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Set the site that the beacon manager will use with detected beacons</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)setCurrentTour:(GeLoTour *)<em>tour</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>tour</em></dt>
-			<dd><p>an instance of GeLoTour</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Set the site that the beacon manager will use with detected beacons</p>
 	</div>
 	
 	
@@ -1446,7 +1037,7 @@ the nearest beacon.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 GeLo. All rights reserved. (Last updated: 2014-01-21)</span><br />
+						<p><span class="copyright">&copy; 2014 GeLo. All rights reserved. (Last updated: 2014-05-23)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
 						

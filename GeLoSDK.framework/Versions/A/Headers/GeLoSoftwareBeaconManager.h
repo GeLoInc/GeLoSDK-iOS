@@ -3,7 +3,7 @@
 //  GeLoSDK
 //
 //  Created by Zach Dennis on 12/10/13.
-//  Copyright (c) 2013 Collective Idea. All rights reserved.
+//  Copyright (c) 2013 GeLo Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

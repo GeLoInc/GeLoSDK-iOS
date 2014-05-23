@@ -32,23 +32,19 @@
 // Sites and Tour Notifications
 #define kGeLoTourLoaded             @"GeLoTourLoaded"
 #define kGeLoToursLoaded            @"GeLoToursLoaded"
+#define kGeLoTourNeedsUpdate        @"GeLoTourNeedsUpdate"
+#define kGeLoTourUpToDate           @"GeLoTourUpToDate"
 #define kGeLoSiteLoaded             @"GeLoSiteLoaded"
 #define kGeLoSitesLoaded            @"GeLoSitesLoaded"
-#define kGeLoCacheToursLoaded       @"GeLoCacheToursLoaded"
-#define kGeLoCacheTourLoaded        @"GeLoCacheTourLoaded"
-#define kGeLoCacheTourUpdated       @"GeLoCacheTourUpdated"
-#define kGeLoCacheSitesLoaded       @"GeLoCacheSitesLoaded"
-#define kGeLoCacheSiteLoaded        @"GeLoCacheSiteLoaded"
-#define kGeLoCacheSiteUpdated       @"GeLoCacheSiteUpdated"
-#define kGeLoBeaconListLoaded       @"GeLoBeaconListLoaded"
-#define kGeLoCacheBeaconListLoaded  @"GeLoCacheBeaconListLoaded"
-#define kGeLoBeaconImageLoaded      @"GeLoBeaconImageLoaded"
-#define kGeLoBeaconAudioLoaded      @"GeLoBeaconAudioLoaded"
-#define kGeLoBeaconMediaLoaded      @"GeLoBeaconMediaLoaded"
+#define kGeLoSiteNeedsUpdate        @"GeLoSiteNeedsUpdate"
+#define kGeLoSiteUpToDate           @"GeLoSiteUpToDate"
+#define kGeLoMediaLoaded            @"GeLoMediaLoaded"
 
 // Beacon Values
+#define	kGeLoBeaconProximityUUID                  @"11E44F09-4EC4-407E-9203-CF57A50FBCE0"
+#define kGeLoBeaconIdentifier                     @"com.gelo.ibeacon.region"
 #define kGeLoBeaconHardwareCompanyIdentifier      0xC8
-#define kGeLoBeaconSignalCeiling                  -40
+#define kGeLoBeaconSignalCeiling                  0
 #define kGeLoPacketSize                           10
 
 // Software/VirtualBeacon

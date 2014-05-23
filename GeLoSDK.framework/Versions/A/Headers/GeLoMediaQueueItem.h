@@ -10,8 +10,9 @@
 
 @interface GeLoMediaQueueItem : NSObject
 
-- (id) initWithDownloadUrl: (NSString *)url andCallback: (void (^)())callback;
+- (id) initWithDownloadUrl: (NSString *)url type:(NSString *)type andCallback: (void (^)())callback;
 
+@property (nonatomic, copy) NSString *type;
 @property (nonatomic, copy) NSString *downloadUrl;
 @property (nonatomic, copy) void (^downloadCallback)();
 

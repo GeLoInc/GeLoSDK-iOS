@@ -27,11 +27,6 @@
 @property (nonatomic) NSString *name;
 
 /**
- Main body of content for the beacon
- */
-@property (nonatomic) NSString *description;
-
-/**
  Signal falloff for the beacon
  */
 @property (nonatomic) NSNumber *signalFalloff;
@@ -39,12 +34,7 @@
 /**
  Image content associated with a beacon
  */
-@property (nonatomic) NSArray  *images;
-
-/**
- Audio content associated with a beacon
- */
-@property (nonatomic) NSArray *audios;
+@property (nonatomic) NSArray  *mediaURLs;
 
 /**
  URL for a tour map of this beacon within a tour
@@ -54,17 +44,36 @@
 /**
  URL for an iPhone banner image associated with a beacon
  */
-@property (nonatomic) NSString *bannerAdPhoneImageUrl;
+@property (nonatomic) NSString *bannerAdPhoneImage;
 
 /**
  URL for an iPad banner image associated with a beacon.
  */
-@property (nonatomic) NSString *bannerAdTabletImageUrl;
+@property (nonatomic) NSString *bannerAdTabletImage;
 
 /**
  URL that is associated with the banner ad images.
  */
 @property (nonatomic) NSString *bannerAdUrl;
+
+/**
+ The beacon header.
+ */
+@property (nonatomic) NSString *descriptionHeader;
+
+/**
+ The category that the beacon belongs to.
+ */
+@property (nonatomic) NSString *category;
+
+/**
+ The identifier for the category.
+ */
+@property (nonatomic) NSNumber *categoryId;
+/**
+ The beacon type.
+ */
+@property (nonatomic) NSString *type;
 
 + (id)beaconInfoFromJson:(NSDictionary *)dictionary;
 - (id)initWithJson:(NSDictionary *)dictionary;

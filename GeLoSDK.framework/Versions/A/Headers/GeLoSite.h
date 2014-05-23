@@ -7,55 +7,70 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "GeLoMediaDownloading.h"
 
 /**
- `GeLoSite` is a data model representing a site from the CMS
+ `GeLoSite` is a data model representing a site from the platform
  */
 @interface GeLoSite : NSObject <GeLoMediaDownloading>
 
+- (id)initWithSiteJSON:(NSDictionary *)site;
+- (BOOL)updateNeeded:(NSDate *)updatedAt;
+
 /**
- identifier for the site
+ The identifier assigned by the platform.
  */
 @property (nonatomic) NSNumber *siteId;
 
 /**
- name of the site
+ The site name.
  */
 @property (nonatomic) NSString *name;
 
 /**
- URL for a logo for the site
+ The remote url for the site logo.
  */
-@property (nonatomic) NSString *logo;
+@property (nonatomic) NSString *logoImageURL;
 
 /**
- background image for the site
+ The remote url for the background image.
  */
-@property (nonatomic) NSString *background;
+@property (nonatomic) NSString *backgroundImageURL;
 
 /**
- date the site was last updated
+ The remote url for the splash screen background url.
  */
-@property (nonatomic) NSDate   *updatedAt;
+@property (nonatomic) NSString *splashBackgroundImageURL;
 
 /**
- description of the site
+ The description for the site.
  */
 @property (nonatomic) NSString *description;
 
-+ (id)siteFromJson:(NSDictionary *)dictionary;
-- (id)initWithJson:(NSDictionary *)dictionary;
+/**
+ An array of tours associated with the site.
+ */
+@property (nonatomic) NSArray  *tours;
 
-+ (id)siteFromFile:(NSString *)path;
-- (id)initWithFile:(NSString *)path;
+/**
+ An array of sections associated with the site.
+ */
+@property (nonatomic) NSArray  *sections;
 
-- (BOOL)updateNeeded:(NSDate *)updatedAt;
+/**
+ The background color for the site.
+ */
+@property (nonatomic) UIColor  *backgroundColor;
 
+/**
+ The last time that the site was update.
+ */
+@property (nonatomic) NSDate   *updatedAt;
 
 # pragma mark - GeLoMediaDownloading
 
-@property (nonatomic, copy) NSNumber *percentageOfMediaDownloadsComplete;
-- (BOOL) mediaDownloadsAreComplete;
+//@property (nonatomic, copy) NSNumber *percentageOfMediaDownloadsComplete;
+//- (BOOL) mediaDownloadsAreComplete;
 
 @end

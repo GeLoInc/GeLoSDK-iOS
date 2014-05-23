@@ -13,6 +13,54 @@
 		
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GeLoBeaconManager/sharedInstance</TokenIdentifier>
+			<Abstract type="html">The class method used to access the beacon manager singleton.</Abstract>
+			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
+			
+			<Declaration>+ (GeLoBeaconManager *)sharedInstance</Declaration>
+			
+			<ReturnValue><Abstract type="html">an instance of beacon manager.</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedInstance</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/startScanningForBeacons</TokenIdentifier>
+			<Abstract type="html">Start the beacon manager scanning for beacons</Abstract>
+			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
+			
+			<Declaration>- (void)startScanningForBeacons</Declaration>
+			
+			
+			<Anchor>//api/name/startScanningForBeacons</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/isScanning</TokenIdentifier>
+			<Abstract type="html">Get whether or not the beacon manager is actively scanning for beacons</Abstract>
+			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isScanning</Declaration>
+			
+			<ReturnValue><Abstract type="html">a boolean indicating the scanning state</Abstract></ReturnValue>
+			<Anchor>//api/name/isScanning</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/stopScanningForBeacons</TokenIdentifier>
+			<Abstract type="html">Stop the beacon manager from scanning for beacons</Abstract>
+			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
+			
+			<Declaration>- (void)stopScanningForBeacons</Declaration>
+			
+			
+			<Anchor>//api/name/stopScanningForBeacons</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/setFalloff:forId:</TokenIdentifier>
 			<Abstract type="html">Sets the threshold for the specified beacon</Abstract>
 			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
@@ -84,74 +132,14 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/includeBetaTours</TokenIdentifier>
-			<Abstract type="html">Tell the beacon manager to request beta sites in addition to normal ones</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/unsetNearestBeacon</TokenIdentifier>
+			<Abstract type="html">Unsets the nearest beacon.</Abstract>
 			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
 			
-			<Declaration>- (void)includeBetaTours</Declaration>
+			<Declaration>- (void)unsetNearestBeacon</Declaration>
 			
 			
-			<Anchor>//api/name/includeBetaTours</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/startScanningForBeacons</TokenIdentifier>
-			<Abstract type="html">Start the beacon manager scanning for beacons</Abstract>
-			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
-			
-			<Declaration>- (void)startScanningForBeacons</Declaration>
-			
-			
-			<Anchor>//api/name/startScanningForBeacons</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/isScanning</TokenIdentifier>
-			<Abstract type="html">Get whether or not the beacon manager is actively scanning for beacons</Abstract>
-			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
-			
-			<Declaration>- (BOOL)isScanning</Declaration>
-			
-			<ReturnValue><Abstract type="html">a boolean indicating the scanning state</Abstract></ReturnValue>
-			<Anchor>//api/name/isScanning</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/isPaused</TokenIdentifier>
-			<Abstract type="html">Get whether or not the beacon manager is actively scanning for beacons</Abstract>
-			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
-			
-			<Declaration>- (BOOL)isPaused</Declaration>
-			
-			<ReturnValue><Abstract type="html">a boolean indicating the paused state</Abstract></ReturnValue>
-			<Anchor>//api/name/isPaused</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/stopScanningForBeacons</TokenIdentifier>
-			<Abstract type="html">Stop the beacon manager from scanning for beacons</Abstract>
-			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
-			
-			<Declaration>- (void)stopScanningForBeacons</Declaration>
-			
-			
-			<Anchor>//api/name/stopScanningForBeacons</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/pauseScanningForBeacons</TokenIdentifier>
-			<Abstract type="html">Pause the beacon manager from scanning for beacons</Abstract>
-			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
-			
-			<Declaration>- (void)pauseScanningForBeacons</Declaration>
-			
-			
-			<Anchor>//api/name/pauseScanningForBeacons</Anchor>
+			<Anchor>//api/name/unsetNearestBeacon</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
@@ -168,6 +156,18 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/knownTourBeacons</TokenIdentifier>
+			<Abstract type="html">Get a list of beacons that belong to the current tour.</Abstract>
+			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)knownTourBeacons</Declaration>
+			
+			<ReturnValue><Abstract type="html">an array of GeLoBeacon instances.</Abstract></ReturnValue>
+			<Anchor>//api/name/knownTourBeacons</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/nearestBeacon</TokenIdentifier>
 			<Abstract type="html">Get the nearest beacon</Abstract>
 			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
@@ -176,106 +176,6 @@
 			
 			<ReturnValue><Abstract type="html">an instance of GeLoBeacon</Abstract></ReturnValue>
 			<Anchor>//api/name/nearestBeacon</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/knownTours</TokenIdentifier>
-			<Abstract type="html">Fetches the list of sites from the remote host.  Returns currently known sites initially, then sends a notification
-with the updated list after the remote host has responded.</Abstract>
-			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
-			
-			<Declaration>- (NSArray *)knownTours</Declaration>
-			
-			<ReturnValue><Abstract type="html">array of GeLoSites</Abstract></ReturnValue>
-			<Anchor>//api/name/knownTours</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/currentTour</TokenIdentifier>
-			<Abstract type="html">Get the current tour that the beacon manager is using to determin beacon info</Abstract>
-			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
-			
-			<Declaration>- (GeLoTour *)currentTour</Declaration>
-			
-			<ReturnValue><Abstract type="html">an instance of GeLoTour</Abstract></ReturnValue>
-			<Anchor>//api/name/currentTour</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/currentSite</TokenIdentifier>
-			<Abstract type="html">Get the current site the the beacon maanger is using</Abstract>
-			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
-			
-			<Declaration>- (GeLoSite *)currentSite</Declaration>
-			
-			<ReturnValue><Abstract type="html">an instance of GeLoSite</Abstract></ReturnValue>
-			<Anchor>//api/name/currentSite</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/infoForBeaconId:</TokenIdentifier>
-			<Abstract type="html">Get information about a beacon in the context of the current site</Abstract>
-			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
-			
-			<Declaration>- (GeLoBeaconInfo *)infoForBeaconId:(NSNumber *)beaconId</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>beaconId</Name>
-					<Abstract type="html">id of a beacon</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">an instance of GeLoBeaconInfo</Abstract></ReturnValue>
-			<Anchor>//api/name/infoForBeaconId:</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/loadTourById:</TokenIdentifier>
-			<Abstract type="html">Retreives a site from the remote host and sets it as the current site on the beacon manager</Abstract>
-			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
-			
-			<Declaration>- (void)loadTourById:(NSNumber *)tourId</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>tourId</Name>
-					<Abstract type="html">id of a gelo site</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/loadTourById:</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/setCurrentTour:</TokenIdentifier>
-			<Abstract type="html">Set the site that the beacon manager will use with detected beacons</Abstract>
-			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
-			
-			<Declaration>- (void)setCurrentTour:(GeLoTour *)tour</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>tour</Name>
-					<Abstract type="html">an instance of GeLoTour</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setCurrentTour:</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/unsetNearestBeacon</TokenIdentifier>
-			<Abstract type="html">Unsets the nearest beacon.</Abstract>
-			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
-			
-			<Declaration>- (void)unsetNearestBeacon</Declaration>
-			
-			
-			<Anchor>//api/name/unsetNearestBeacon</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
