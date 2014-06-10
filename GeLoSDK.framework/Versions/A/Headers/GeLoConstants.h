@@ -25,9 +25,10 @@
 #define kGeLoScanningResumed        @"GeLoScanningResumed"
 
 // Network Request Notifications
-#define kGeLoNetworkRequestStarted  @"GeLoNetworkRequestStarted"
-#define kGeLoNetworkRequestFinished @"GeLoNetworkRequestFinished"
-#define kGeLoNetworkRequestErrored  @"GeLoNetworkRequestErrored"
+#define kGeLoNetworkRequestAuthenticated  @"GeLoNetworkRequestAuthenticated"
+#define kGeLoNetworkRequestStarted        @"GeLoNetworkRequestStarted"
+#define kGeLoNetworkRequestFinished       @"GeLoNetworkRequestFinished"
+#define kGeLoNetworkRequestErrored        @"GeLoNetworkRequestErrored"
 
 // Sites and Tour Notifications
 #define kGeLoTourLoaded             @"GeLoTourLoaded"

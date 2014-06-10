@@ -38,11 +38,13 @@
 + (id)sharedInstance;
 - (void)setOAuth2ClientID:(NSString *)clientID username:(NSString *)username andPassword:(NSString *)password;
 - (void)shouldCache:(BOOL)shouldCache;
+- (void)authenticate;
 - (GeLoSite *)currentSite;
 - (GeLoTour *)currentTour;
 - (GeLoSite *)loadSiteById:(NSInteger)siteId;
 - (GeLoTour *)loadTourById:(NSInteger)tourId;
 - (NSArray *)loadKnownSites;
+- (NSArray *)loadKnownSpaces;
 - (NSArray *)loadKnownTours;
 - (void)setCurrentTour:(GeLoTour *)tour;
 - (void)setCurrentSite:(GeLoSite *)site;

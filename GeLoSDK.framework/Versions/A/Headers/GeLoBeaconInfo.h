@@ -57,11 +57,6 @@
 @property (nonatomic) NSString *bannerAdUrl;
 
 /**
- The beacon header.
- */
-@property (nonatomic) NSString *descriptionHeader;
-
-/**
  The category that the beacon belongs to.
  */
 @property (nonatomic) NSString *category;

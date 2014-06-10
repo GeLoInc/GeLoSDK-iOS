@@ -50,6 +50,7 @@ While `GeLoBeaconManager` is scanning, it can emit the following notifications:
 /// @name Utility Methods
 ///----------------------
 - (void)unsetNearestBeacon;
+- (void)setNonTourBeacons:(NSArray *)beacons;
 - (NSArray *)knownBeacons;
 - (NSArray *)knownTourBeacons;
 - (GeLoBeacon *)nearestBeacon;
