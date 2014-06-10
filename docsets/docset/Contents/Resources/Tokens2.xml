@@ -373,42 +373,6 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconInfo/setDescriptionHeader:</TokenIdentifier>
-			<Abstract type="html">The beacon header.</Abstract>
-			<DeclaredIn>GeLoBeaconInfo.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) NSString *descriptionHeader</Declaration>
-			
-			
-			<Anchor>//api/name/descriptionHeader</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconInfo/descriptionHeader</TokenIdentifier>
-			<Abstract type="html">The beacon header.</Abstract>
-			<DeclaredIn>GeLoBeaconInfo.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) NSString *descriptionHeader</Declaration>
-			
-			
-			<Anchor>//api/name/descriptionHeader</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/GeLoBeaconInfo/descriptionHeader</TokenIdentifier>
-			<Abstract type="html">The beacon header.</Abstract>
-			<DeclaredIn>GeLoBeaconInfo.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) NSString *descriptionHeader</Declaration>
-			
-			
-			<Anchor>//api/name/descriptionHeader</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconInfo/setCategory:</TokenIdentifier>
 			<Abstract type="html">The category that the beacon belongs to.</Abstract>
 			<DeclaredIn>GeLoBeaconInfo.h</DeclaredIn>
