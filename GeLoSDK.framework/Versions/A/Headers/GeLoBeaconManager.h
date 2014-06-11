@@ -2,11 +2,11 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
-
+#import <CoreLocation/CoreLocation.h>
+#import "GeLoCLBeaconManager.h"
 #import "GeLoBeacon.h"
 #import "GeLoTour.h"
 #import "GeLoSite.h"
-
 
 /**
 `GeLoBeaconManager` scans for beacons and also maintains a list of beacons it can find.
@@ -31,19 +31,22 @@ While `GeLoBeaconManager` is scanning, it can emit the following notifications:
  - kGeLoBeaconListLoaded
 */
 
-@interface GeLoBeaconManager : NSObject<CBCentralManagerDelegate> {
-    __block NSMutableDictionary	  *knownBeacons;
+@class GeLoCLBeacon;
+
+@interface GeLoBeaconManager : NSObject <CBCentralManagerDelegate, GeLoCLBeaconManagerDelegate> {
+    __block NSMutableDictionary   *knownBeacons;
     __block NSMutableDictionary   *knownTourBeaconsDict;
     __block NSArray               *knownTourBeacons;
-    __block GeLoBeacon			  *nearestBeacon;
+    __block GeLoBeacon            *nearestBeacon;
             dispatch_queue_t      scanningQueue;
     
-	        NSNotificationCenter  *notificationCenter;
-        	NSMutableDictionary	  *tours;
+			NSNotificationCenter  *notificationCenter;
+			GeLoCLBeaconManager   *CLBeaconManager;
+			NSMutableDictionary   *tours;
             NSMutableDictionary   *sites;
             NSMutableDictionary   *falloffs;
-            NSInteger			  falloff;
-            NSUInteger			  timeToLive;
+            NSInteger             falloff;
+            NSUInteger            timeToLive;
             NSInteger             signalCeiling;
             GeLoTour			  *currentTour;
             GeLoSite              *currentSite;

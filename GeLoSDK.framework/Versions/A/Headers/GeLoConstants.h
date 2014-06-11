@@ -47,6 +47,8 @@
 #define kGeLoBeaconMediaLoaded      @"GeLoBeaconMediaLoaded"
 
 // Beacon Values
+#define	kGeLoBeaconProximityUUID                  @"11E44F09-4EC4-407E-9203-CF57A50FBCE0"
+#define kGeLoBeaconIdentifier                     @"com.gelo.ibeacon.region"
 #define kGeLoBeaconHardwareCompanyIdentifier      0xC8
 #define kGeLoBeaconSignalCeiling                  -40
 #define kGeLoPacketSize                           10

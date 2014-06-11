@@ -43,6 +43,7 @@ While `GeLoCache` can emit the following notifications:
  Path on the device where cache data is stored
  */
 + (NSString *)cacheDirectory;
+
 /**
 Clears the cache
  */

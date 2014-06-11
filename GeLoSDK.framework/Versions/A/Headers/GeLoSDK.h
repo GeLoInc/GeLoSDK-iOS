@@ -12,6 +12,7 @@
 #import "GeLoBeaconManager.h"
 #import "GeLoBeaconInfo.h"
 #import "GeLoBeacon.h"
+#import "GeLoCLBeacon.h"
 #import "GeLoTour.h"
 #import "GeLoSite.h"
 #import "GeLoCache.h"

@@ -10,11 +10,14 @@
 #import "GeLoBeacon.h"
 #import <CoreBluetooth/CoreBluetooth.h>
 
+@class GeLoCLBeacon;
+
 @interface GeLoBeaconBuilder : NSObject
 
 + (id) withRequirements:(NSDictionary *) requirements;
 
 - (id) initWithRequirements:(NSDictionary *) requirements;
 - (GeLoBeacon *) buildWithConfiguration: (NSDictionary *) configuration;
+- (GeLoCLBeacon *) buildWithCLBeaconConfiguration: (NSDictionary *) configuration;
 
 @end
