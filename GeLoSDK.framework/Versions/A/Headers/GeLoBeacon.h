@@ -54,8 +54,13 @@
  */
 @property (readonly, assign) NSInteger txPower;
 
-
 @property (readonly, assign) NSInteger version;
+
+/**
+* A dictionary representation of the beacon's properties.
+*/
+@property (readonly) NSDictionary *dictionary;
+
 ///---------------------------------------------------
 /// @name Retrieving information for a physical beacon
 ///---------------------------------------------------
