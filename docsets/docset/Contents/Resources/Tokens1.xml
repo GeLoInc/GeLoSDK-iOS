@@ -205,42 +205,6 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeacon/setDictionary:</TokenIdentifier>
-			<Abstract type="html">A dictionary representation of the beacon&apos;s properties.</Abstract>
-			<DeclaredIn>GeLoBeacon.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSDictionary *dictionary</Declaration>
-			
-			
-			<Anchor>//api/name/dictionary</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeacon/dictionary</TokenIdentifier>
-			<Abstract type="html">A dictionary representation of the beacon&apos;s properties.</Abstract>
-			<DeclaredIn>GeLoBeacon.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSDictionary *dictionary</Declaration>
-			
-			
-			<Anchor>//api/name/dictionary</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/GeLoBeacon/dictionary</TokenIdentifier>
-			<Abstract type="html">A dictionary representation of the beacon&apos;s properties.</Abstract>
-			<DeclaredIn>GeLoBeacon.h</DeclaredIn>
-			
-			<Declaration>@property (readonly) NSDictionary *dictionary</Declaration>
-			
-			
-			<Anchor>//api/name/dictionary</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeacon/info</TokenIdentifier>
 			<Abstract type="html">Information from the GeLoCMS associated with the beacon</Abstract>
 			<DeclaredIn>GeLoBeacon.h</DeclaredIn>

@@ -19,7 +19,6 @@
 						<NodeRef refid="6"/>
 						<NodeRef refid="7"/>
 						<NodeRef refid="8"/>
-						<NodeRef refid="9"/>
 						
 					</Subnodes>
 				</Node>
@@ -30,7 +29,7 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="10"/>
+						<NodeRef refid="9"/>
 						
 					</Subnodes>
 				</Node>
@@ -118,12 +117,6 @@
                 </Node>
                 
                 
-                <Node type="section">
-                    <Path>Classes/GeLoBeaconManager.html</Path>
-                    <Name>Class Methods</Name>
-                    <Anchor>class_methods</Anchor>
-                </Node>
-                
                 
                 <Node type="section">
                     <Path>Classes/GeLoBeaconManager.html</Path>
@@ -135,31 +128,31 @@
             
         </Node>
 		<Node id="4" type="file" documentType="reference">
-            <Name>GeLoPlatformManager</Name>
-            <Path>Classes/GeLoPlatformManager.html</Path>
+            <Name>GeLoCache</Name>
+            <Path>Classes/GeLoCache.html</Path>
             
                 <Subnodes>
                 <Node type="section">
-                    <Path>Classes/GeLoPlatformManager.html</Path>
+                    <Path>Classes/GeLoCache.html</Path>
                     <Name>Overview</Name>
                     <Anchor>overview</Anchor>
                 </Node>
                 <Node type="section">
-                    <Path>Classes/GeLoPlatformManager.html</Path>
+                    <Path>Classes/GeLoCache.html</Path>
                     <Name>Tasks</Name>
                     <Anchor>tasks</Anchor>
                 </Node>
                 
                 
                 <Node type="section">
-                    <Path>Classes/GeLoPlatformManager.html</Path>
+                    <Path>Classes/GeLoCache.html</Path>
                     <Name>Class Methods</Name>
                     <Anchor>class_methods</Anchor>
                 </Node>
                 
                 
                 <Node type="section">
-                    <Path>Classes/GeLoPlatformManager.html</Path>
+                    <Path>Classes/GeLoCache.html</Path>
                     <Name>Instance Methods</Name>
                     <Anchor>instance_methods</Anchor>
                 </Node>
@@ -168,33 +161,6 @@
             
         </Node>
 		<Node id="5" type="file" documentType="reference">
-            <Name>GeLoSection</Name>
-            <Path>Classes/GeLoSection.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/GeLoSection.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/GeLoSection.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                <Node type="section">
-                    <Path>Classes/GeLoSection.html</Path>
-                    <Name>Properties</Name>
-                    <Anchor>properties</Anchor>
-                </Node>
-                
-                
-                
-            </Subnodes>
-            
-        </Node>
-		<Node id="6" type="file" documentType="reference">
             <Name>GeLoSite</Name>
             <Path>Classes/GeLoSite.html</Path>
             
@@ -227,7 +193,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="7" type="file" documentType="reference">
+		<Node id="6" type="file" documentType="reference">
             <Name>GeLoSoftwareBeacon</Name>
             <Path>Classes/GeLoSoftwareBeacon.html</Path>
             
@@ -254,12 +220,12 @@
             </Subnodes>
             
         </Node>
-		<Node id="8" type="file" documentType="reference">
+		<Node id="7" type="file" documentType="reference">
             <Name>GeLoSoftwareBeaconManager</Name>
             <Path>Classes/GeLoSoftwareBeaconManager.html</Path>
             
         </Node>
-		<Node id="9" type="file" documentType="reference">
+		<Node id="8" type="file" documentType="reference">
             <Name>GeLoTour</Name>
             <Path>Classes/GeLoTour.html</Path>
             
@@ -294,7 +260,7 @@
         </Node>
 		
 		
-        <Node id="10" type="file" documentType="reference">
+        <Node id="9" type="file" documentType="reference">
             <Name>GeLoMediaDownloading</Name>
             <Path>Protocols/GeLoMediaDownloading.html</Path>
             
