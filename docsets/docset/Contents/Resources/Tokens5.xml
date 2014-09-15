@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/GeLoSite.html">
+	<File path="Classes/GeLoPlatformManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/GeLoSite</TokenIdentifier>
-			<Abstract type="html">GeLoSite is a data model representing a site from the CMS</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/GeLoPlatformManager</TokenIdentifier>
+			<Abstract type="html">GeLoPlatformManager handles communication between the GeLo platform and the device</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
             
 			
 			<NodeRef refid="5"/>
@@ -13,278 +13,204 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/setSiteId:</TokenIdentifier>
-			<Abstract type="html">identifier for the site</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/GeLoPlatformManager/sharedInstance</TokenIdentifier>
+			<Abstract type="html">Class method that is used to access the platform manager singleton.</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSNumber *siteId</Declaration>
+			<Declaration>+ (id)sharedInstance</Declaration>
 			
 			
-			<Anchor>//api/name/siteId</Anchor>
+			<Anchor>//api/name/sharedInstance</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/siteId</TokenIdentifier>
-			<Abstract type="html">identifier for the site</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/setOAuth2ClientID:username:andPassword:</TokenIdentifier>
+			<Abstract type="html">Sets OAuth2 authentication credentials for platform access. Credentials can be retrieved from the Gelo Platform.</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSNumber *siteId</Declaration>
+			<Declaration>- (void)setOAuth2ClientID:(NSString *)clientID username:(NSString *)username andPassword:(NSString *)password</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>clientID</Name>
+					<Abstract type="html">the client id provided by the OAuth application</Abstract>
+				</Parameter><Parameter>
+					<Name>username</Name>
+					<Abstract type="html">the username provided by the platfom</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract type="html">the password provided by the password</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/siteId</Anchor>
+			<Anchor>//api/name/setOAuth2ClientID:username:andPassword:</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/GeLoSite/siteId</TokenIdentifier>
-			<Abstract type="html">identifier for the site</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/shouldCache:</TokenIdentifier>
+			<Abstract type="html">Sets whether the platform manager should cache content</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSNumber *siteId</Declaration>
+			<Declaration>- (void)shouldCache:(BOOL)shouldCache</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>shouldCache</Name>
+					<Abstract type="html">whether content should cache</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/siteId</Anchor>
+			<Anchor>//api/name/shouldCache:</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/setName:</TokenIdentifier>
-			<Abstract type="html">name of the site</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/currentSite</TokenIdentifier>
+			<Abstract type="html">Gets the current site</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *name</Declaration>
+			<Declaration>- (GeLoSite *)currentSite</Declaration>
 			
-			
-			<Anchor>//api/name/name</Anchor>
+			<ReturnValue><Abstract type="html">returns an instance of GeLoSite</Abstract></ReturnValue>
+			<Anchor>//api/name/currentSite</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/name</TokenIdentifier>
-			<Abstract type="html">name of the site</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/currentTour</TokenIdentifier>
+			<Abstract type="html">Gets the current tour</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *name</Declaration>
+			<Declaration>- (GeLoTour *)currentTour</Declaration>
 			
-			
-			<Anchor>//api/name/name</Anchor>
+			<ReturnValue><Abstract type="html">returns an instance of GeLoTour</Abstract></ReturnValue>
+			<Anchor>//api/name/currentTour</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/GeLoSite/name</TokenIdentifier>
-			<Abstract type="html">name of the site</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/loadSiteById:</TokenIdentifier>
+			<Abstract type="html">Loads the a site from the platform or cache</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *name</Declaration>
-			
-			
-			<Anchor>//api/name/name</Anchor>
+			<Declaration>- (GeLoSite *)loadSiteById:(NSInteger)siteId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>siteId</Name>
+					<Abstract type="html">the requested site id</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">an instance of GeLoSite if the given site is cached</Abstract></ReturnValue>
+			<Anchor>//api/name/loadSiteById:</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/setLogo:</TokenIdentifier>
-			<Abstract type="html">URL for a logo for the site</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/loadTourById:</TokenIdentifier>
+			<Abstract type="html">Loads the a tour from the platform or cache</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *logo</Declaration>
-			
-			
-			<Anchor>//api/name/logo</Anchor>
+			<Declaration>- (GeLoTour *)loadTourById:(NSInteger)tourId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tourId</Name>
+					<Abstract type="html">the request tour id</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">an instance of GeLoTour if the given tour is cached</Abstract></ReturnValue>
+			<Anchor>//api/name/loadTourById:</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/logo</TokenIdentifier>
-			<Abstract type="html">URL for a logo for the site</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/loadKnownSites</TokenIdentifier>
+			<Abstract type="html">Gets list of sites that the application developer is authenticated for.</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *logo</Declaration>
+			<Declaration>- (NSArray *)loadKnownSites</Declaration>
 			
-			
-			<Anchor>//api/name/logo</Anchor>
+			<ReturnValue><Abstract type="html">the an array of cached sites.</Abstract></ReturnValue>
+			<Anchor>//api/name/loadKnownSites</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/GeLoSite/logo</TokenIdentifier>
-			<Abstract type="html">URL for a logo for the site</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/loadKnownTours</TokenIdentifier>
+			<Abstract type="html">Gets list of tours that the application developer is authenticated for.</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *logo</Declaration>
+			<Declaration>- (NSArray *)loadKnownTours</Declaration>
 			
-			
-			<Anchor>//api/name/logo</Anchor>
+			<ReturnValue><Abstract type="html">the an array of cached tours.</Abstract></ReturnValue>
+			<Anchor>//api/name/loadKnownTours</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/setBackground:</TokenIdentifier>
-			<Abstract type="html">background image for the site</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/setCurrentTour:</TokenIdentifier>
+			<Abstract type="html">Sets the current tour. The beacon manager will use this site to filter detected beacons</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *background</Declaration>
+			<Declaration>- (void)setCurrentTour:(GeLoTour *)tour</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tour</Name>
+					<Abstract type="html">an instance of GeLoTour</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/background</Anchor>
+			<Anchor>//api/name/setCurrentTour:</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/background</TokenIdentifier>
-			<Abstract type="html">background image for the site</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/setCurrentSite:</TokenIdentifier>
+			<Abstract type="html">Sets the current site.</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *background</Declaration>
+			<Declaration>- (void)setCurrentSite:(GeLoSite *)site</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>site</Name>
+					<Abstract type="html">an instance of GeLoTour</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/background</Anchor>
+			<Anchor>//api/name/setCurrentSite:</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/GeLoSite/background</TokenIdentifier>
-			<Abstract type="html">background image for the site</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/getMediaPath:</TokenIdentifier>
+			<Abstract type="html">Gets the local path for a given media url</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *background</Declaration>
-			
-			
-			<Anchor>//api/name/background</Anchor>
+			<Declaration>- (NSString *)getMediaPath:(NSString *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">media url from the platform</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">an NSString with the local path</Abstract></ReturnValue>
+			<Anchor>//api/name/getMediaPath:</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/setUpdatedAt:</TokenIdentifier>
-			<Abstract type="html">date the site was last updated</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoPlatformManager/infoForBeaconId:</TokenIdentifier>
+			<Abstract type="html">Gets an info object for the given beaconId</Abstract>
+			<DeclaredIn>GeLoPlatformManager.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSDate *updatedAt</Declaration>
-			
-			
-			<Anchor>//api/name/updatedAt</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/updatedAt</TokenIdentifier>
-			<Abstract type="html">date the site was last updated</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) NSDate *updatedAt</Declaration>
-			
-			
-			<Anchor>//api/name/updatedAt</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/GeLoSite/updatedAt</TokenIdentifier>
-			<Abstract type="html">date the site was last updated</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) NSDate *updatedAt</Declaration>
-			
-			
-			<Anchor>//api/name/updatedAt</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/setDescription:</TokenIdentifier>
-			<Abstract type="html">description of the site</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) NSString *description</Declaration>
-			
-			
-			<Anchor>//api/name/description</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/description</TokenIdentifier>
-			<Abstract type="html">description of the site</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) NSString *description</Declaration>
-			
-			
-			<Anchor>//api/name/description</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/GeLoSite/description</TokenIdentifier>
-			<Abstract type="html">description of the site</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) NSString *description</Declaration>
-			
-			
-			<Anchor>//api/name/description</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/setPercentageOfMediaDownloadsComplete:</TokenIdentifier>
-			<Abstract type="html">the percentage of media assets that have been downloaded</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, copy) NSNumber *percentageOfMediaDownloadsComplete</Declaration>
-			
-			<ReturnValue><Abstract type="html">the percentage of media assets that have been downloaded</Abstract></ReturnValue>
-			<Anchor>//api/name/percentageOfMediaDownloadsComplete</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/percentageOfMediaDownloadsComplete</TokenIdentifier>
-			<Abstract type="html">the percentage of media assets that have been downloaded</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, copy) NSNumber *percentageOfMediaDownloadsComplete</Declaration>
-			
-			<ReturnValue><Abstract type="html">the percentage of media assets that have been downloaded</Abstract></ReturnValue>
-			<Anchor>//api/name/percentageOfMediaDownloadsComplete</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/GeLoSite/percentageOfMediaDownloadsComplete</TokenIdentifier>
-			<Abstract type="html">the percentage of media assets that have been downloaded</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, copy) NSNumber *percentageOfMediaDownloadsComplete</Declaration>
-			
-			<ReturnValue><Abstract type="html">the percentage of media assets that have been downloaded</Abstract></ReturnValue>
-			<Anchor>//api/name/percentageOfMediaDownloadsComplete</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/mediaDownloadsAreComplete</TokenIdentifier>
-			<Abstract type="html">TRUE|FALSE depending on if all media downloads are completed.</Abstract>
-			<DeclaredIn>GeLoSite.h</DeclaredIn>
-			
-			<Declaration>- (BOOL)mediaDownloadsAreComplete</Declaration>
-			
-			<ReturnValue><Abstract type="html">TRUE|FALSE depending on if all media downloads are completed.</Abstract></ReturnValue>
-			<Anchor>//api/name/mediaDownloadsAreComplete</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/mediaCount</TokenIdentifier>
-			<Abstract type="html">Number of content items (images and audios) associated with this object.</Abstract>
-			<DeclaredIn>GeLoSite.m</DeclaredIn>
-			
-			<Declaration>- (NSInteger)mediaCount</Declaration>
-			
-			
-			<Anchor>//api/name/mediaCount</Anchor>
+			<Declaration>- (GeLoBeaconInfo *)infoForBeaconId:(NSNumber *)beaconId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>beaconId</Name>
+					<Abstract type="html">id for a physical beacon</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">an instance of GeLoBeaconInfo</Abstract></ReturnValue>
+			<Anchor>//api/name/infoForBeaconId:</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		

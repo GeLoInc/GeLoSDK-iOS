@@ -1,4 +1,4 @@
 Documentation set was installed to Xcode!
 
-Path: /Users/zdennis/Library/Developer/Shared/Documentation/DocSets/com.gelo.GeLoSDK.docset
-Time: 2014-06-11 14:03:29 +0000
+Path: /Users/Tyr/Library/Developer/Shared/Documentation/DocSets/com.gelo.GeLoSDK.docset
+Time: 2014-09-15 15:49:51 +0000

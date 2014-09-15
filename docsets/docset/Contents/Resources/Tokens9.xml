@@ -1,69 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/GeLoMediaDownloading.html">
+	<File path="Classes/GeLoSoftwareBeaconManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/GeLoMediaDownloading</TokenIdentifier>
-			<Abstract type="html">A protocol that describes the current progress of media downloads.</Abstract>
-			<DeclaredIn>GeLoMediaDownloading.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/GeLoSoftwareBeaconManager</TokenIdentifier>
+			<Abstract type="html">GeLoSoftwareBeaconManager is responsible for managing
+software beacons.</Abstract>
+			<DeclaredIn>GeLoSoftwareBeaconManager.h</DeclaredIn>
             
 			
 			<NodeRef refid="9"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GeLoMediaDownloading/mediaCount</TokenIdentifier>
-			<Abstract type="html">Number of content items (images and audios) associated with this object.</Abstract>
-			<DeclaredIn>GeLoMediaDownloading.h</DeclaredIn>
-			
-			<Declaration>- (NSInteger)mediaCount</Declaration>
-			
-			
-			<Anchor>//api/name/mediaCount</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GeLoMediaDownloading/setPercentageOfMediaDownloadsComplete:</TokenIdentifier>
-			<Abstract type="html">Sets the percentage of media assets that have been downloaded.</Abstract>
-			<DeclaredIn>GeLoMediaDownloading.h</DeclaredIn>
-			
-			<Declaration>- (void)setPercentageOfMediaDownloadsComplete:(NSNumber *)number</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>number</Name>
-					<Abstract type="html">the percentage value</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setPercentageOfMediaDownloadsComplete:</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GeLoMediaDownloading/percentageOfMediaDownloadsComplete</TokenIdentifier>
-			<Abstract type="html">the percentage of media assets that have been downloaded</Abstract>
-			<DeclaredIn>GeLoMediaDownloading.h</DeclaredIn>
-			
-			<Declaration>- (NSNumber *)percentageOfMediaDownloadsComplete</Declaration>
-			
-			<ReturnValue><Abstract type="html">the percentage of media assets that have been downloaded</Abstract></ReturnValue>
-			<Anchor>//api/name/percentageOfMediaDownloadsComplete</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GeLoMediaDownloading/mediaDownloadsAreComplete</TokenIdentifier>
-			<Abstract type="html">TRUE|FALSE depending on if all media downloads are completed.</Abstract>
-			<DeclaredIn>GeLoMediaDownloading.h</DeclaredIn>
-			
-			<Declaration>- (BOOL)mediaDownloadsAreComplete</Declaration>
-			
-			<ReturnValue><Abstract type="html">TRUE|FALSE depending on if all media downloads are completed.</Abstract></ReturnValue>
-			<Anchor>//api/name/mediaDownloadsAreComplete</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
 		
         
 	</File>

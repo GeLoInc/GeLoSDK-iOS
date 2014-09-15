@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/GeLoCache.html">
+	<File path="Classes/GeLoBeaconManager.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/GeLoCache</TokenIdentifier>
-			<Abstract type="html">GeLoCache stores and serves content from the GeLo CMS.</Abstract>
-			<DeclaredIn>GeLoCache.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/GeLoBeaconManager</TokenIdentifier>
+			<Abstract type="html">GeLoBeaconManager scans for beacons and also maintains a list of beacons it can find.</Abstract>
+			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
             
 			
 			<NodeRef refid="4"/>
@@ -13,147 +13,206 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/GeLoCache/cacheDirectory</TokenIdentifier>
-			<Abstract type="html">Path on the device where cache data is stored</Abstract>
-			<DeclaredIn>GeLoCache.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/GeLoBeaconManager/sharedInstance</TokenIdentifier>
+			<Abstract type="html">The class method used to access the beacon manager singleton.</Abstract>
+			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
 			
-			<Declaration>+ (NSString *)cacheDirectory</Declaration>
+			<Declaration>+ (GeLoBeaconManager *)sharedInstance</Declaration>
 			
-			
-			<Anchor>//api/name/cacheDirectory</Anchor>
+			<ReturnValue><Abstract type="html">an instance of beacon manager.</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedInstance</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoCache/clearCache</TokenIdentifier>
-			<Abstract type="html">Clears the cache</Abstract>
-			<DeclaredIn>GeLoCache.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/startScanningForBeacons</TokenIdentifier>
+			<Abstract type="html">Start the beacon manager scanning for beacons</Abstract>
+			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
 			
-			<Declaration>- (void)clearCache</Declaration>
+			<Declaration>- (void)startScanningForBeacons</Declaration>
 			
 			
-			<Anchor>//api/name/clearCache</Anchor>
+			<Anchor>//api/name/startScanningForBeacons</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoCache/loadTours</TokenIdentifier>
-			<Abstract type="html">Fetches and caches a list of available tours.</Abstract>
-			<DeclaredIn>GeLoCache.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/isScanning</TokenIdentifier>
+			<Abstract type="html">Get whether or not the beacon manager is actively scanning for beacons</Abstract>
+			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
 			
-			<Declaration>- (NSArray *)loadTours</Declaration>
+			<Declaration>- (BOOL)isScanning</Declaration>
 			
-			<ReturnValue><Abstract type="html">array of tours if tours are cached, otherwise nil</Abstract></ReturnValue>
-			<Anchor>//api/name/loadTours</Anchor>
+			<ReturnValue><Abstract type="html">a boolean indicating the scanning state</Abstract></ReturnValue>
+			<Anchor>//api/name/isScanning</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoCache/loadTour:</TokenIdentifier>
-			<Abstract type="html">Fetches and caches a single tour.</Abstract>
-			<DeclaredIn>GeLoCache.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/stopScanningForBeacons</TokenIdentifier>
+			<Abstract type="html">Stop the beacon manager from scanning for beacons</Abstract>
+			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
 			
-			<Declaration>- (GeLoTour *)loadTour:(NSNumber *)tourId</Declaration>
+			<Declaration>- (void)stopScanningForBeacons</Declaration>
+			
+			
+			<Anchor>//api/name/stopScanningForBeacons</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/setFalloff:forId:</TokenIdentifier>
+			<Abstract type="html">Sets the threshold for the specified beacon</Abstract>
+			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
+			
+			<Declaration>- (void)setFalloff:(NSInteger)_falloff forId:(NSUInteger)_id</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>tourId</Name>
-					<Abstract type="html">id of a GeLoTour</Abstract>
+					<Name>_falloff</Name>
+					<Abstract type="html">the threshold for determining if a beacon is near</Abstract>
+				</Parameter><Parameter>
+					<Name>_id</Name>
+					<Abstract type="html">the id of the beacon to apply the threshold to</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">a GeLoTour if the tour is cached, otherwise nil</Abstract></ReturnValue>
-			<Anchor>//api/name/loadTour:</Anchor>
+			
+			<Anchor>//api/name/setFalloff:forId:</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoCache/loadSites</TokenIdentifier>
-			<Abstract type="html">Fetches and caches a list of available sites.</Abstract>
-			<DeclaredIn>GeLoCache.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/setDefaultFalloff:</TokenIdentifier>
+			<Abstract type="html">Sets the default threshold to apply to beacons without a threshold of their own</Abstract>
+			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
 			
-			<Declaration>- (NSArray *)loadSites</Declaration>
-			
-			<ReturnValue><Abstract type="html">array of sites if sites are cached, otherwise nil</Abstract></ReturnValue>
-			<Anchor>//api/name/loadSites</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoCache/loadSite:</TokenIdentifier>
-			<Abstract type="html">Fetches and caches a single GeLoSite.</Abstract>
-			<DeclaredIn>GeLoCache.h</DeclaredIn>
-			
-			<Declaration>- (GeLoSite *)loadSite:(NSNumber *)siteId</Declaration>
+			<Declaration>- (void)setDefaultFalloff:(NSInteger)_falloff</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>siteId</Name>
-					<Abstract type="html">id of a GeLoSite</Abstract>
+					<Name>_falloff</Name>
+					<Abstract type="html">the threshold for determining if a beacon is near</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">a GeLoSite if the site is cached, otherwise nil</Abstract></ReturnValue>
-			<Anchor>//api/name/loadSite:</Anchor>
+			
+			<Anchor>//api/name/setDefaultFalloff:</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoCache/loadImage:</TokenIdentifier>
-			<Abstract type="html">Fetches and caches a single image belonging to a GeLoBeacon</Abstract>
-			<DeclaredIn>GeLoCache.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/setDefaultTimeToLive:</TokenIdentifier>
+			<Abstract type="html">Sets the time a beacon will be allowed to remain in the known beacons list</Abstract>
+			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
 			
-			<Declaration>- (UIImage *)loadImage:(NSString *)imageUrl</Declaration>
+			<Declaration>- (void)setDefaultTimeToLive:(NSUInteger)ttl</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>imageUrl</Name>
-					<Abstract type="html">url for an image from the GeLo CMS</Abstract>
+					<Name>ttl</Name>
+					<Abstract type="html">the number of seconds a beacon will remain &quot;known&quot;</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">the image if it is cached, otherwise nil</Abstract></ReturnValue>
-			<Anchor>//api/name/loadImage:</Anchor>
+			
+			<Anchor>//api/name/setDefaultTimeToLive:</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoCache/loadAudio:</TokenIdentifier>
-			<Abstract type="html">Fetches and caches a single audio belonging to a GeLoBeacon</Abstract>
-			<DeclaredIn>GeLoCache.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/setDefaultSignalCeiling:</TokenIdentifier>
+			<Abstract type="html">Sets the default minimum signal strength that the SDK will pay attention too</Abstract>
+			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
 			
-			<Declaration>- (NSData *)loadAudio:(NSString *)audioUrl</Declaration>
+			<Declaration>- (void)setDefaultSignalCeiling:(NSInteger)ceiling</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>audioUrl</Name>
-					<Abstract type="html">url for an audio from the GeLo CMS</Abstract>
+					<Name>ceiling</Name>
+					<Abstract type="html">minimum signal strength</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">the audio data if it is cached, otherwise nil</Abstract></ReturnValue>
-			<Anchor>//api/name/loadAudio:</Anchor>
+			
+			<Anchor>//api/name/setDefaultSignalCeiling:</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoCache/loadBeaconList</TokenIdentifier>
-			<Abstract type="html">Fetches and caches a list of GeLoBeacons</Abstract>
-			<DeclaredIn>GeLoCache.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/unsetNearestBeacon</TokenIdentifier>
+			<Abstract type="html">Unsets the nearest beacon.</Abstract>
+			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
 			
-			<Declaration>- (NSDictionary *)loadBeaconList</Declaration>
+			<Declaration>- (void)unsetNearestBeacon</Declaration>
 			
-			<ReturnValue><Abstract type="html">dictionary of beacons if it is cached, otherwise nil</Abstract></ReturnValue>
-			<Anchor>//api/name/loadBeaconList</Anchor>
+			
+			<Anchor>//api/name/unsetNearestBeacon</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoCache/siteForBeaconId:</TokenIdentifier>
-			<Abstract type="html">Fetches and returns the siteId for the given beaconId</Abstract>
-			<DeclaredIn>GeLoCache.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/knownBeacons</TokenIdentifier>
+			<Abstract type="html">Get a list of the beacons currently in range</Abstract>
+			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
 			
-			<Declaration>- (NSInteger)siteForBeaconId:(NSInteger)beaconId</Declaration>
+			<Declaration>- (NSArray *)knownBeacons</Declaration>
+			
+			<ReturnValue><Abstract type="html">an array of GeLoBeacon instances</Abstract></ReturnValue>
+			<Anchor>//api/name/knownBeacons</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/knownTourBeacons</TokenIdentifier>
+			<Abstract type="html">Get a list of beacons that belong to the current tour.</Abstract>
+			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)knownTourBeacons</Declaration>
+			
+			<ReturnValue><Abstract type="html">an array of GeLoBeacon instances.</Abstract></ReturnValue>
+			<Anchor>//api/name/knownTourBeacons</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/nearestBeacon</TokenIdentifier>
+			<Abstract type="html">Get the nearest beacon</Abstract>
+			<DeclaredIn>GeLoBeaconManager.h</DeclaredIn>
+			
+			<Declaration>- (GeLoBeacon *)nearestBeacon</Declaration>
+			
+			<ReturnValue><Abstract type="html">an instance of GeLoBeacon</Abstract></ReturnValue>
+			<Anchor>//api/name/nearestBeacon</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/setNearestBeacon:</TokenIdentifier>
+			<Abstract type="html">Sets the nearest beacon. Posts a kGeLoNearestBeaconChanged notification
+if the given beacon is different than the current nearest beacon. Returns
+the nearest beacon.</Abstract>
+			<DeclaredIn>GeLoBeaconManager.m</DeclaredIn>
+			
+			<Declaration>- (id)setNearestBeacon:(GeLoBeacon *)beacon</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>beaconId</Name>
-					<Abstract type="html">The id for the given beacon.</Abstract>
+					<Name>beacon</Name>
+					<Abstract type="html">The nearest beacon.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">NSInteger siteId</Abstract></ReturnValue>
-			<Anchor>//api/name/siteForBeaconId:</Anchor>
+			
+			<Anchor>//api/name/setNearestBeacon:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoBeaconManager/expireBeacon:</TokenIdentifier>
+			<Abstract type="html">Expires the nearest beacon by clearing the nearest beacon and posting a
+kGeLoNearestBeaconExpired notification.</Abstract>
+			<DeclaredIn>GeLoBeaconManager.m</DeclaredIn>
+			
+			<Declaration>- (void)expireBeacon:(GeLoBeacon *)beacon</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>beacon</Name>
+					<Abstract type="html">The expired beacon.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/expireBeacon:</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		

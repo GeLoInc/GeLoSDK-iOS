@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>GeLoMediaDownloading Protocol Reference</title>
+		<title>GeLoAppInfo Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">GeLoMediaDownloading Protocol Reference</h1>
+				<h1 class="hideInXcode">GeLoAppInfo Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -39,17 +39,15 @@
 	
 	
 	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/getSessionId">&nbsp;&nbsp;&nbsp;&nbsp;+ getSessionId</option>
+	
+	<option value="//api/name/getUDID">&nbsp;&nbsp;&nbsp;&nbsp;+ getUDID</option>
+	
+	<option value="//api/name/getVersion">&nbsp;&nbsp;&nbsp;&nbsp;+ getVersion</option>
 	
 	
-	<option value="instance_methods">Instance Methods</option>
-	
-	<option value="//api/name/mediaCount">&nbsp;&nbsp;&nbsp;&nbsp;- mediaCount</option>
-	
-	<option value="//api/name/mediaDownloadsAreComplete">&nbsp;&nbsp;&nbsp;&nbsp;- mediaDownloadsAreComplete</option>
-	
-	<option value="//api/name/percentageOfMediaDownloadsComplete">&nbsp;&nbsp;&nbsp;&nbsp;- percentageOfMediaDownloadsComplete</option>
-	
-	<option value="//api/name/setPercentageOfMediaDownloadsComplete:">&nbsp;&nbsp;&nbsp;&nbsp;- setPercentageOfMediaDownloadsComplete:</option>
 	
 	
 	
@@ -75,26 +73,24 @@
 
 
 
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mediaCount">mediaCount</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getSessionId">getSessionId</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mediaDownloadsAreComplete">mediaDownloadsAreComplete</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getUDID">getUDID</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/percentageOfMediaDownloadsComplete">percentageOfMediaDownloadsComplete</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setPercentageOfMediaDownloadsComplete:">setPercentageOfMediaDownloadsComplete:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getVersion">getVersion</a></span></li>
 	
 </ul></li>
+
+
 
 
 			</ul>
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="GeLoMediaDownloading Protocol Reference" name="top"></a>
+				<a title="GeLoAppInfo Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -103,18 +99,18 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">GeLoMediaDownloading Protocol Reference</h1>
+						<h1 class="title title-header">GeLoAppInfo Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<td class="specification-title">Conforms to</td>
+	<td class="specification-title">Inherits from</td>
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">GeLoMediaDownloading.h</td>
+	<td class="specification-value">GeLoAppInfo.h<br />GeLoAppInfo.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -124,7 +120,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>A protocol that describes the current progress of media downloads.</p>
+						<p><code>GeLoAppInfo</code> handles retrieving information about the application session.</p>
 					</div>
 					
 					
@@ -142,28 +138,22 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/mediaCount">&ndash;&nbsp;mediaCount</a></code>
+		<code><a href="#//api/name/getSessionId">+&nbsp;getSessionId</a></code>
 	</span>
 	
-	<span class="task-item-suffix">required method</span>
+	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/setPercentageOfMediaDownloadsComplete:">&ndash;&nbsp;setPercentageOfMediaDownloadsComplete:</a></code>
+		<code><a href="#//api/name/getVersion">+&nbsp;getVersion</a></code>
 	</span>
 	
-	<span class="task-item-suffix">required method</span>
+	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/percentageOfMediaDownloadsComplete">&ndash;&nbsp;percentageOfMediaDownloadsComplete</a></code>
+		<code><a href="#//api/name/getUDID">+&nbsp;getUDID</a></code>
 	</span>
 	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/mediaDownloadsAreComplete">&ndash;&nbsp;mediaDownloadsAreComplete</a></code>
-	</span>
 	
-	<span class="task-item-suffix">required method</span>
 </li>
 						</ul>
 						
@@ -175,66 +165,23 @@
 					
 					
 					
-					
-					
 					<div class="section section-methods">
-						<a title="Instance Methods" name="instance_methods"></a>
-						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/mediaCount" title="mediaCount"></a>
-	<h3 class="subsubtitle method-title">mediaCount</h3>
+	<a name="//api/name/getSessionId" title="getSessionId"></a>
+	<h3 class="subsubtitle method-title">getSessionId</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Number of content items (images and audios) associated with this object.</p>
+		<p>Handles tracking information about the application&rsquo;s current session number.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (NSInteger)mediaCount</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Number of content items (images and audios) associated with this object.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">GeLoMediaDownloading.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/mediaDownloadsAreComplete" title="mediaDownloadsAreComplete"></a>
-	<h3 class="subsubtitle method-title">mediaDownloadsAreComplete</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>TRUE|FALSE depending on if all media downloads are completed.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (BOOL)mediaDownloadsAreComplete</code></div>
+	<div class="method-subsection method-declaration"><code>+ (NSNumber *)getSessionId</code></div>
 
     
 	
@@ -242,95 +189,8 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>TRUE|FALSE depending on if all media downloads are completed.</p>
+		<p>the current session id.</p>
 	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">GeLoMediaDownloading.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/percentageOfMediaDownloadsComplete" title="percentageOfMediaDownloadsComplete"></a>
-	<h3 class="subsubtitle method-title">percentageOfMediaDownloadsComplete</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>the percentage of media assets that have been downloaded</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (NSNumber *)percentageOfMediaDownloadsComplete</code></div>
-
-    
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>the percentage of media assets that have been downloaded</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">GeLoMediaDownloading.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/setPercentageOfMediaDownloadsComplete:" title="setPercentageOfMediaDownloadsComplete:"></a>
-	<h3 class="subsubtitle method-title">setPercentageOfMediaDownloadsComplete:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Sets the percentage of media assets that have been downloaded.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)setPercentageOfMediaDownloadsComplete:(NSNumber *)<em>number</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>number</em></dt>
-			<dd><p>the percentage value</p></dd>
-		</dl>
-		
-	</div>
-	
-	
 	
 	
 	
@@ -338,7 +198,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Sets the percentage of media assets that have been downloaded.</p>
+		<p>Handles tracking information about the application&rsquo;s current session number.</p>
 	</div>
 	
 	
@@ -349,13 +209,109 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">GeLoMediaDownloading.h</code><br />
+		<code class="declared-in-ref">GeLoAppInfo.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getUDID" title="getUDID"></a>
+	<h3 class="subsubtitle method-title">getUDID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The identifierForVendor value is generated the same for all apps from the same vendor.
+Different values are generated on different devices.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)getUDID</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the identifierForVendor.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The identifierForVendor value is generated the same for all apps from the same vendor.
+Different values are generated on different devices.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GeLoAppInfo.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getVersion" title="getVersion"></a>
+	<h3 class="subsubtitle method-title">getVersion</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Handles tracking information about the application&rsquo;s current version.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)getVersion</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the current application version/bundle version</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Handles tracking information about the application&rsquo;s current version.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GeLoAppInfo.m</code><br />
 	</div>				
 	
 	
 </div>
 						
 					</div>
+					
+					
 					
 					
                     
