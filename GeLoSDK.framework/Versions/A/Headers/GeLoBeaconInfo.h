@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-
+#import "GeLoNotification.h"
 
 /**
  `GeLoBeaconInfo is a data model that represents CMS information associated with a beacon
@@ -65,6 +65,7 @@
  The identifier for the category.
  */
 @property (nonatomic) NSNumber *categoryId;
+
 /**
  The beacon type.
  */
@@ -72,5 +73,6 @@
 
 + (id)beaconInfoFromJson:(NSDictionary *)dictionary;
 - (id)initWithJson:(NSDictionary *)dictionary;
+- (id)nilSafe:(id)content;
 
 @end

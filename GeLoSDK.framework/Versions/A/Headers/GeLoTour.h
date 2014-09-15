@@ -6,14 +6,12 @@
 //  Copyright (c) 2013 GeLo Inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "GeLoMediaDownloading.h"
-#import <UIKit/UIKit.h>
 
 /**
  `GeLoTour` is a data model that represents tour information from the CMS
  */
-@interface GeLoTour : NSObject <GeLoMediaDownloading>
+@interface GeLoTour : NSObject
 
 /**
  The identifier assigned by the platform.

@@ -6,14 +6,12 @@
 //  Copyright (c) 2013 GeLo Inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
 #import "GeLoMediaDownloading.h"
 
 /**
  `GeLoSite` is a data model representing a site from the platform
  */
-@interface GeLoSite : NSObject <GeLoMediaDownloading>
+@interface GeLoSite : NSObject
 
 - (id)initWithSiteJSON:(NSDictionary *)site;
 - (BOOL)updateNeeded:(NSDate *)updatedAt;
@@ -67,6 +65,8 @@
  The last time that the site was update.
  */
 @property (nonatomic) NSDate   *updatedAt;
+
+@property (nonatomic) NSArray  *notifications;
 
 # pragma mark - GeLoMediaDownloading
 

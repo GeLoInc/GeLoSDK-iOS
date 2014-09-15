@@ -7,12 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SpacesDynamicObject.h"
-#import "SpacesView.h"
-#import "SpacesTextView.h"
-#import "SpacesImageView.h"
-#import "SpacesLabel.h"
-#import "SpacesButton.h"
 
 /**
  `GeLoSection` is a data model that represents section information from the CMS
@@ -58,13 +52,8 @@
 @property (nonatomic) NSArray  *dynamicObjects;
 
 /**
- The tour id for tour type secitons.
+ Identifier for a site.
  */
-@property (nonatomic) NSInteger tourId;
-
-/**
- The url for web type sections.
- */
-@property (nonatomic) NSString *url;
+@property (nonatomic) NSString *identifier;
 
 @end

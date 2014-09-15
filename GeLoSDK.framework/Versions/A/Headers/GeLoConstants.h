@@ -48,6 +48,17 @@
 #define kGeLoBeaconSignalCeiling                  0
 #define kGeLoPacketSize                           10
 
+// Analytics
+#define kGeLoNavigationPush                   @"navigation_push"
+#define kGeLoNavigationPop                    @"navigation_pop"
+#define kGeLoApplicationSuspend               @"application_suspend"
+#define kGeLoApplicationLaunch                @"application_launch"
+#define kGeLoBeacon                           @"beacon"
+#define kGeLoNavigation                       @"navigation"
+#define kGeLoGPS                              @"gps"
+#define kGeLoCustom                           @"custom"
+#define kGeLoVersion                          @"version"
+
 // Software/VirtualBeacon
 #define kGeLoSoftwareBeaconServiceLocalName   @"GeLoSoftwareBeacon"
 

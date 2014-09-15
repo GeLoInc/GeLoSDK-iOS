@@ -50,5 +50,6 @@
 - (void)setCurrentSite:(GeLoSite *)site;
 - (NSString *)getMediaPath:(NSString *)url;
 - (GeLoBeaconInfo *)infoForBeaconId:(NSNumber *)beaconId;
+//- (BOOL)postAnalytics:(BOOL)shouldForcePost withApplication:(UIApplication *)application;
 
 @end

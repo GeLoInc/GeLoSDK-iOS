@@ -11,15 +11,20 @@
 
 @interface GeLoCacheManager : NSObject
 
+- (void)seedCache;
 - (NSString *)getMediaPath:(NSString *)url;
+- (NSString *)tableFilepath;
+- (NSDictionary *)mediaCacheTable;
+- (id)loadCacheObject:(NSString *)key;
 - (NSArray *)loadKnownSites;
 - (NSArray *)loadKnownTours;
-- (NSString *)cacheFile;
-- (NSDictionary *)getMediaCache;
-- (id)loadCacheObject:(NSString *)key;
-- (void)seedCache;
 - (void)writeObject:(id)object forKey:(NSString *)key;
 - (NSString *)writeMedia:(NSData *)data withURL:(NSString *)url;
-- (void)removeUnusedMedia:(NSArray *)usedMedia;
+- (void)writeJson:(id)beaconEvents withContentType:(NSString *)type;
+- (NSArray *)getJsonFromFilesContaining:(NSString *)eventType;
+- (void)removeMedia;
+- (void)removeFile:(NSString *)filePath withContentType:(NSString *)event;
+- (NSArray *)getFilenamesContaining:(NSString *)eventType;
+- (NSString *)filePathForContentType:(NSString *)eventType;
 
 @end

@@ -3,7 +3,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 #import <CoreLocation/CoreLocation.h>
-#import "GeLoCLBeaconManager.h"
+#import "GeLoCoreLocationManager.h"
 #import "GeLoBeacon.h"
 #import "GeLoTour.h"
 #import "GeLoSite.h"
