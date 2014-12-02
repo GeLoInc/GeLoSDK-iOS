@@ -1,5 +1,5 @@
 #Github.io Page
-http://geloinc.github.io/GeLoSDK/
+http://geloinc.github.io/GeLoSDK-iOS/
 
 #Using the GeLoSDK
 
