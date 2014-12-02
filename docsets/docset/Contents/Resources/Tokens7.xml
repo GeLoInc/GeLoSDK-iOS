@@ -193,38 +193,38 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/setDescription:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/setBody:</TokenIdentifier>
 			<Abstract type="html">The description for the site.</Abstract>
 			<DeclaredIn>GeLoSite.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *description</Declaration>
+			<Declaration>@property (nonatomic) NSString *body</Declaration>
 			
 			
-			<Anchor>//api/name/description</Anchor>
+			<Anchor>//api/name/body</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/description</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/GeLoSite/body</TokenIdentifier>
 			<Abstract type="html">The description for the site.</Abstract>
 			<DeclaredIn>GeLoSite.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *description</Declaration>
+			<Declaration>@property (nonatomic) NSString *body</Declaration>
 			
 			
-			<Anchor>//api/name/description</Anchor>
+			<Anchor>//api/name/body</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/GeLoSite/description</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instp/GeLoSite/body</TokenIdentifier>
 			<Abstract type="html">The description for the site.</Abstract>
 			<DeclaredIn>GeLoSite.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *description</Declaration>
+			<Declaration>@property (nonatomic) NSString *body</Declaration>
 			
 			
-			<Anchor>//api/name/description</Anchor>
+			<Anchor>//api/name/body</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
@@ -372,6 +372,7 @@
             <NodeRef refid="7"/>
 		</Token>
 		
+        
         
 	</File>
 </Tokens>

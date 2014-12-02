@@ -233,7 +233,7 @@
 			<Abstract type="html">An array of beacon infos associated with the tour.</Abstract>
 			<DeclaredIn>GeLoTour.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSMutableDictionary *beaconInfos</Declaration>
+			<Declaration>@property (nonatomic) NSArray *beaconInfos</Declaration>
 			
 			
 			<Anchor>//api/name/beaconInfos</Anchor>
@@ -245,7 +245,7 @@
 			<Abstract type="html">An array of beacon infos associated with the tour.</Abstract>
 			<DeclaredIn>GeLoTour.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSMutableDictionary *beaconInfos</Declaration>
+			<Declaration>@property (nonatomic) NSArray *beaconInfos</Declaration>
 			
 			
 			<Anchor>//api/name/beaconInfos</Anchor>
@@ -257,7 +257,7 @@
 			<Abstract type="html">An array of beacon infos associated with the tour.</Abstract>
 			<DeclaredIn>GeLoTour.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSMutableDictionary *beaconInfos</Declaration>
+			<Declaration>@property (nonatomic) NSArray *beaconInfos</Declaration>
 			
 			
 			<Anchor>//api/name/beaconInfos</Anchor>
@@ -300,6 +300,7 @@
             <NodeRef refid="10"/>
 		</Token>
 		
+        
         
 	</File>
 </Tokens>
