@@ -8,7 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ Called on the completion of a network request
+ @returns the requested NSData
+ */
 typedef void(^NetworkRequestCallback)(NSData *);
+
+/**
+ Called on network request error
+ @returns the error
+ */
 typedef void(^NetworkRequestErrorCallback)(NSError *);
 
 @interface GeLoNetworkRequest : NSObject<NSURLConnectionDataDelegate>

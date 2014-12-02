@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 GeLo Inc. All rights reserved.
 //
 
-#import <GeLoSDK/GeLoSDK.h>
+#import "GeLoSDK.h"
 
 @interface GeLoCLBeacon : GeLoBeacon
 
@@ -14,5 +14,7 @@
 
 @property (readonly, assign) double accuracy;
 @property (readonly, assign) NSString *range;
+@property (readonly, assign) NSNumber *major;
+@property (readonly, assign) NSNumber *minor;
 
 @end

@@ -8,17 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GeLoNotification : NSObject
+@interface GeLoNotification : NSObject <NSCoding>
 
 @property (nonatomic) NSNumber *notificationId;
+@property (nonatomic) NSString *body;
 @property (nonatomic) NSString *type;
-@property (nonatomic) NSString *description;
-@property (nonatomic) NSDate *fireDate;
-@property (nonatomic) NSNumber *fireDelay;
-@property (nonatomic) NSDictionary *userInfo;
-@property (nonatomic) NSCalendarUnit interval;
-@property (nonatomic) BOOL displayInForeground;
 
 - (id)initWithNotificationJSON:(NSDictionary *)json;
+- (id)initWithCoder:(NSCoder *)decoder;
+- (void)encodeWithCoder:(NSCoder *)encoder;
 
 @end

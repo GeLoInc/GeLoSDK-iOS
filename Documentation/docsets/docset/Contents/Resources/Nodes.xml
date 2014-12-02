@@ -37,6 +37,17 @@
 				</Node>
 				
                 
+                
+                <Node>
+                    <Name>Blocks</Name>
+                    <Path>index.html</Path>
+                    <Subnodes>
+                        <NodeRef refid="12"/>
+                        <NodeRef refid="13"/>
+                        
+                    </Subnodes>
+                </Node>
+                
 			</Subnodes>
         </Node>
     </TOC>
@@ -338,6 +349,17 @@
             
         </Node>
 		
+        
+        <Node id="12" type="file" documentType="reference">
+            <Name>NetworkRequestCallback</Name>
+            <Path>Blocks/NetworkRequestCallback.html</Path>
+            
+        </Node>
+        <Node id="13" type="file" documentType="reference">
+            <Name>OAuthCallback</Name>
+            <Path>Blocks/OAuthCallback.html</Path>
+            
+        </Node>
         
 	</Library>
 </DocSetNodes>

@@ -7,14 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GeLoCacheManager.h"
 #import "GeLoMediaQueue.h"
 #import "GeLoSite.h"
 #import "GeLoTour.h"
 
 @interface GeLoContentManager : NSObject
 
-- (id)initWithMediaQueue:(GeLoMediaQueue *)mediaQueue andKnownMedia:(NSDictionary *)mediaCache;
-- (NSArray *)loadSiteMedia:(GeLoSite *)site;
+- (id)initWithMediaQueue:(GeLoMediaQueue *)mediaQueue cache:(GeLoCacheManager *)cache;
+- (void)loadSiteMedia:(GeLoSite *)site;
 - (void)loadTourMedia:(GeLoTour *)tour;
 
 @end

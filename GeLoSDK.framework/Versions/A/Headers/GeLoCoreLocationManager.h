@@ -27,9 +27,12 @@
 @property id<GeLoCLGPSManagerDelegate> gpsDelegate;
 
 + (GeLoCoreLocationManager *)sharedInstance;
+- (void)changeMonitoredUUIDs:(NSArray *)uuids;
 - (void)startMonitoringLocation;
 - (void)stopMonitoringLocation;
 - (void)startScanningForCLBeacons;
 - (void)stopScanningForCLBeacons;
+- (void)requestAlwaysAuthorization;
+- (void)requestWhenInUseAuthorization;
 
 @end

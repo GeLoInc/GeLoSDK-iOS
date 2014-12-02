@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 GeLo Inc. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "GeLoBeaconInfo.h"
 
 @interface GeLoHuntInfo : GeLoBeaconInfo

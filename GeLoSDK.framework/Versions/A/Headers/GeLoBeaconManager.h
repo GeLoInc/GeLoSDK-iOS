@@ -34,6 +34,8 @@ While `GeLoBeaconManager` is scanning, it can emit the following notifications:
 ///-----------------------
 /// @name Scanning Control
 ///-----------------------
+- (void)requestForegroundScanningPermission;
+- (void)requestAlwaysScanningPermission;
 - (void)startScanningForBeacons;
 - (BOOL)isScanning;
 - (void)stopScanningForBeacons;

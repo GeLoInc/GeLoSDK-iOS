@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 GeLo Inc. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "GeLoMediaDownloading.h"
 
 /**
@@ -48,7 +49,7 @@
 /**
  An array of beacon infos associated with the tour.
  */
-@property (nonatomic) NSMutableDictionary *beaconInfos;
+@property (nonatomic) NSArray *beaconInfos;
 
 /**
  The last time that the tour was updated.

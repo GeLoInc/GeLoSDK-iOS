@@ -23,6 +23,10 @@
 #define kGeLoNearestBeaconExpired   @"GeLoNearestBeaconExpired"
 #define kGeLoScanningPaused         @"GeloscanningPaused"
 #define kGeLoScanningResumed        @"GeLoScanningResumed"
+#define kGeLoEnteredRegion          @"GeLoEnteredRegion"
+#define kGeLoExitedRegion           @"GeLoExitedRegion"
+#define kGeLoLocationNotEnabled     @"GeLoLocationNotEnabled"
+#define kGeLoLocationNotAuthorized  @"GeLoLocationNotAuthorized"
 
 // Network Request Notifications
 #define kGeLoNetworkRequestAuthenticated  @"GeLoNetworkRequestAuthenticated"
@@ -65,5 +69,8 @@
 // Software/VirtualBeacon Notifications
 #define kGeLoSoftwareBeaconAdvertisingStarted @"GeLoSoftwareBeacon:advertisingStarted"
 #define kGeLoSoftwareBeaconAdvertisingStopped @"GeLoSoftwareBeacon:advertisingStopped"
+
+// Special
+#define kWifarerBeaconFound @"WifarerBeaconFound"
 
 #endif

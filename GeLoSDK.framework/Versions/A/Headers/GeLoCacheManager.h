@@ -11,6 +11,7 @@
 
 @interface GeLoCacheManager : NSObject
 
++ (NSString *)cacheDirectory;
 - (void)seedCache;
 - (NSString *)getMediaPath:(NSString *)url;
 - (NSString *)tableFilepath;

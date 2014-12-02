@@ -11,6 +11,6 @@
 
 @interface GeLoTourInfo : GeLoBeaconInfo
 
-@property (nonatomic) NSString *description;
+@property (nonatomic) NSString *body;
 
 @end

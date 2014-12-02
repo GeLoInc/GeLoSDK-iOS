@@ -8,7 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ Called on the completion of an OAuth request
+ @returns the OAuth details
+ */
 typedef void(^OAuthCallback)(NSDictionary *);
+
+/**
+ Called on OAuth request error
+ @returns the error
+ */
 typedef void(^OAuthErrorCallback)(NSError *);
 
 @interface GeLoOAuthRequest : NSObject<NSURLConnectionDataDelegate>

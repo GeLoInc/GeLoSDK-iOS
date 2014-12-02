@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 GeLo Inc. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "GeLoMediaDownloading.h"
 
 /**
@@ -44,7 +45,7 @@
 /**
  The description for the site.
  */
-@property (nonatomic) NSString *description;
+@property (nonatomic) NSString *body;
 
 /**
  An array of tours associated with the site.
@@ -67,6 +68,8 @@
 @property (nonatomic) NSDate   *updatedAt;
 
 @property (nonatomic) NSArray  *notifications;
+
+@property (nonatomic) NSNumber *nearbyToursBadge;
 
 # pragma mark - GeLoMediaDownloading
 

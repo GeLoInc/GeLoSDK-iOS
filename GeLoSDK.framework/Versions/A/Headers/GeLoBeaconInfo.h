@@ -1,5 +1,4 @@
 #import <Foundation/Foundation.h>
-#import "GeLoNotification.h"
 
 /**
  `GeLoBeaconInfo is a data model that represents CMS information associated with a beacon
