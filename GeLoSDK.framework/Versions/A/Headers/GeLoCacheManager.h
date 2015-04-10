@@ -15,7 +15,8 @@
 - (void)seedCache;
 - (NSString *)getMediaPath:(NSString *)url;
 - (NSString *)tableFilepath;
-- (NSDictionary *)mediaCacheTable;
+- (NSDictionary *)cacheMediaTable;
+- (NSDictionary *)seedMediaTable;
 - (id)loadCacheObject:(NSString *)key;
 - (NSArray *)loadKnownSites;
 - (NSArray *)loadKnownTours;
@@ -27,5 +28,6 @@
 - (void)removeFile:(NSString *)filePath withContentType:(NSString *)event;
 - (NSArray *)getFilenamesContaining:(NSString *)eventType;
 - (NSString *)filePathForContentType:(NSString *)eventType;
+- (uint64_t)getFreeDiskspace;
 
 @end

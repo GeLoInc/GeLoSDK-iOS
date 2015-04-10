@@ -13,9 +13,9 @@
 @interface GeLoAnalyticsManager : NSObject <GeLoCLGPSManagerDelegate>
 
 + (GeLoAnalyticsManager *)sharedInstance;
-- (void)beaconEventsShouldBeEnabled:(BOOL)enable;
-- (void)GPSEventsShouldBeEnabled:(BOOL)enable;
-- (void)navigationEventShouldBeEnabled:(BOOL)enable;
+- (void)enableBeaconEvents:(BOOL)enable;
+- (void)enableGPSEvents:(BOOL)enable;
+- (void)enableNavigationEvents:(BOOL)enable;
 - (void)navigationEvent:(NSString *)localEvent view:(NSString *)view destinationIdentifier:(NSString *)identifier;
 - (void)beaconEvent:(GeLoBeacon *)beacon;
 - (void)customEvent:(NSDictionary *)dictionary type:(NSString *)type;

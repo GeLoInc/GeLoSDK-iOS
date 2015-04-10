@@ -23,6 +23,7 @@ typedef void(^NetworkRequestErrorCallback)(NSError *);
 @interface GeLoNetworkRequest : NSObject<NSURLConnectionDataDelegate>
 
 + (instancetype)requestWithToken:(NSString *)token platformPath:(NSString *)path callback:(void(^)(NSData *))callback error:(void(^)(NSError *))error;
++ (instancetype)requestWithToken:(NSString *)token platformPath:(NSString *)path body:(NSData *)body callback:(void(^)(NSData *))callback error:(void(^)(NSError *))error;
 + (instancetype)requestWithExternalUrl:(NSURL *)url callback:(void(^)(NSData *))callback error:(void(^)(NSError *))error;
 
 @property (nonatomic, copy) NetworkRequestCallback callback;
