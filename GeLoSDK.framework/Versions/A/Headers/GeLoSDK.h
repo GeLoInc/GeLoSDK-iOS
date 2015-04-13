@@ -18,7 +18,6 @@
 #import "GeLoWebInfo.h"
 #import "GeLoBeacon.h"
 #import "GeLoCLBeacon.h"
-#import "GeLoBLBeacon.h"
 #import "GeLoTour.h"
 #import "GeLoSite.h"
 #import "GeLoSection.h"
