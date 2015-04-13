@@ -18,6 +18,7 @@
 #import "GeLoWebInfo.h"
 #import "GeLoBeacon.h"
 #import "GeLoCLBeacon.h"
+#import "GeLoBLBeacon.h"
 #import "GeLoTour.h"
 #import "GeLoSite.h"
 #import "GeLoSection.h"
@@ -37,4 +38,3 @@
 #import "GeLoSoftwareBeaconManager.h"
 #import "GeLoAnalyticsBuilder.h"
 #import "GeLoVersionEvent.h"
-#import "UIColor+RGBColorFromString.h"
